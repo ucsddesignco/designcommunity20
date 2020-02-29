@@ -1,0 +1,99 @@
+@import "./Reset.scss";
+@import "./Vars.scss";
+
+@font-face {
+  font-family: "Neue Plak Extended";
+  src: url("../fonts/NeuePlak-ExtendedBold.woff2") format("woff2"),
+    url("../fonts/NeuePlak-ExtendedBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NB International Mono";
+  src: url("../fonts/NBInternationalMonoWebfont.woff2") format("woff2"),
+    url("../fonts/NBInternationalMonoWebfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NB International Pro";
+  src: url("../fonts/NBInternationalPro-Lig.woff2") format("woff2"),
+    url("../fonts/NBInternationalPro-Lig.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  font-size: 7px;
+  @media screen and (min-width: $sm) {
+    font-size: 8px;
+  }
+  @media screen and (min-width: $md) {
+    font-size: 10px;
+  }
+
+  color: $white;
+}
+
+h1{
+  font-family: "Neue Plak Extended", sans-serif;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+}
+
+h2 {
+  font-family: "NB International Pro", sans-serif;
+  padding: 0.6rem 0.8rem;
+  font-size: 2rem;
+  color: $black;
+  background-color: $white;
+  display: inline;
+  letter-spacing: 0.02em;
+  line-height: 3.1rem;
+}
+
+h3 {
+  font-family: "Neue Plak Extended", sans-serif;
+  line-height: 2.8rem;
+  font-size: 2rem;
+  color: $white;
+}
+
+h4 {
+  font-family: "NB International Pro", sans-serif;
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+  color: $white;
+}
+
+p {
+  font-family: "NB International Mono", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: $white;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: "NB International Mono";
+  font-size: 1.2rem;
+  color: white;
+}
+
+select,
+option {
+  font-family: "NB International Mono", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: $white;
+}

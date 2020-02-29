@@ -1,0 +1,166 @@
+@import "./Reset.scss";
+@import "./Typography.scss";
+@import "./Vars.scss";
+
+html {
+  background-color: $black;
+}
+
+.container {
+  margin: $spacer2;
+
+  .mainSite {
+    position: absolute;
+    bottom: $spacer3;
+    h3:last-child {
+      margin-left: $spacer2;
+    }
+  }
+
+  .leftSide {
+    position: fixed;
+    top: $spacer2;
+    width: 20%;
+    z-index: 10;
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h3, h4 {
+    margin-top: $spacer2;
+  }
+
+
+  #filter {
+    h4 {
+      float: right;
+      cursor: pointer;
+    }
+
+    h4:hover {
+      text-decoration: underline;
+    }
+
+    h3 {
+      float: left;
+    }
+
+    br {
+      clear: both;
+    }
+  }
+  button {
+    width: 95%;
+    border-radius: 0%;
+    border: 2px solid $white;
+    height: 5rem;
+    background-color: $black;
+    margin-top: $spacer2;
+  }
+
+  .checkbox {
+    border: 2px solid purple;
+  }
+
+  label {
+    margin-top: $spacer1;
+    display: flex;
+
+    p {
+      margin-left: $spacer1;
+    }
+  }
+}
+
+select,
+option {
+  height: 35px;
+  border: 1px solid $white;
+  background: $black;
+  margin-top: $spacer1;
+}
+
+.memberContainer {
+  > img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  > img:hover {
+    filter: none;
+  }
+
+  > p {
+    margin: $base 0;
+  }
+  .info {
+    display: flex;
+    margin-top: $base;
+    p {
+      margin-left: $spacer1;
+    }
+  }
+
+  margin-bottom: $spacer2;
+}
+
+.aboutPage{
+  border: 2px solid $white;
+  margin-top: -$spacer2;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+  background: $black;
+  width: 50%;
+  height: 100%;
+
+  #about-dcom{
+    margin-top: -$spacer1 !important;
+    border-bottom: 2px solid $white;
+    padding: 0 $spacer1 $spacer1 $spacer1;
+
+    #closeButton{
+      height: 2rem;
+      width: 2rem;
+      padding-top: $spacer2;
+      float: right;
+   }
+
+   h4{
+     float: left;
+   }
+  }
+
+  h1{
+    margin: $spacer1;
+  }
+
+  #about-body-text{
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    margin: 0 $spacer1;
+    border: none;
+  }
+
+
+}
+
+.nomination {
+  form {
+    label {
+      p {
+        margin-right: $spacer1;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+}

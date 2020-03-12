@@ -4,8 +4,6 @@
 
 html {
   background-color: $black;
-  height: 100%;
-
 }
 
 .container {
@@ -181,8 +179,9 @@ option {
 }
 
 .temp {
-  img {
+  #tempImg {
     width: 100%;
+
     /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
     /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
     -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */

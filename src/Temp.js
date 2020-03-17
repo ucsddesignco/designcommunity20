@@ -5,7 +5,12 @@ class Temp extends React.Component {
   render() {
     return (
       <div className="temp">
-        <img src={require("./images/dcoloaddesktop.gif")} />
+        <img src={require("./images/dcoloaddesktop.gif")} draggable="false" className="mainImg"/>
+        <h4>Keep an eye out for something we're cooking up...</h4>
+        <span>
+          <h3>Main Site</h3>
+          <img src={require("./images/Union.svg")} />
+        </span>
       </div>
     );
   }

@@ -180,7 +180,26 @@ option {
 }
 
 .temp {
-  img {
+  h4{
+    margin-top: 450px;
+    margin-left: 35%;
+  }
+
+  span{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    left: $spacer1;
+    bottom: $spacer1;
+
+    img{
+      margin-top: 0.5rem;
+      height: 2.8rem;
+      margin-left: $spacer1;
+    }
+  }
+  img.mainImg {
+    z-index: -1;
     width: 900px;
     height: auto;
 
@@ -189,14 +208,19 @@ option {
     margin-left: -450px;
     top: 50%;
     margin-top: -375px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
-  @media screen and (max-width: 1000px){
-    img{
+  @media screen and (max-width: 1000px) {
+    img.mainImg {
       width: 100%;
       margin-left: -50%;
       margin-top: -50%;
     }
   }
-
 }

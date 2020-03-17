@@ -180,23 +180,34 @@ option {
 }
 
 .temp {
-  h4{
-    margin-top: 450px;
+  h4 {
+    margin-top: 425px;
     margin-left: 35%;
   }
 
-  span{
-    display: flex;
+  span {
+    a {
+      display: flex;
+    }
+
+    a:hover{
+      text-decoration: none;
+    }
+
     z-index: 1;
     position: absolute;
-    left: $spacer1;
-    bottom: $spacer1;
+    left: $spacer2;
+    bottom: $spacer2;
 
-    img{
+    img {
       margin-top: 0.5rem;
       height: 2.8rem;
-      margin-left: $spacer1;
+      margin-left: $spacer1/2;
     }
+  }
+
+  span:hover{
+    opacity: 0.8;
   }
   img.mainImg {
     z-index: -1;

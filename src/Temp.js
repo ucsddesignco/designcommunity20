@@ -10,7 +10,6 @@ class Temp extends React.Component {
           draggable="false"
           className="mainImg"
         />
-        <h4>Keep an eye out for something we're cooking up...</h4>
         <span>
           <a href="http://www.ucsddesign.co/">
             <h3>Main Site</h3>

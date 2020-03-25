@@ -41,7 +41,6 @@ class App extends React.Component {
     this.resetFilters = this.resetFilters.bind(this);
     this.aboutState = this.aboutState.bind(this);
     this.aboutCallback = this.aboutCallback.bind(this);
-
   }
 
   handleChange(event) {
@@ -65,10 +64,21 @@ class App extends React.Component {
     this.setState({
       aboutButton: val
     });
+
+    if (this.state.aboutButton === true) {
+      document.getElementById("memberMap").style.position = "fixed";
+    } else {
+      document.getElementById("memberMap").style.position = "static";
+    }
   }
 
   resetFilters() {
     console.log("RESET FILTERS");
+
+    let allBoxes = document.getElementsByTagName("input");
+    for (let i = 0; i < allBoxes.length; i++) {
+      allBoxes[i].checked = false;
+    }
 
     this.setState({
       UXDesigner: false,
@@ -82,11 +92,11 @@ class App extends React.Component {
     });
   }
 
-  aboutCallback(){
-    console.log("ABOUT CALLBACK")
+  aboutCallback() {
+    console.log("ABOUT CALLBACK");
     this.setState({
       aboutButton: false
-    })
+    });
   }
 
   allMemberMap() {
@@ -135,13 +145,17 @@ class App extends React.Component {
     return (
       <div className="container">
         {console.log("RENDER AGAIN")}
-        {this.state.aboutButton && <About parentCallback = {this.aboutCallback}/>}
+        {this.state.aboutButton && (
+          <About parentCallback={this.aboutCallback} />
+        )}
 
         <Row id="mainContainer">
           <Col xs={20} sm={5} md={5}>
             <div className="leftSide">
               <img src={require("./images/designCommunity.svg")}></img>
-              <button type="button">NOMINATE</button>
+              <button type="button" id="nominateBtn">
+                NOMINATE
+              </button>
 
               <div id="filter">
                 <h3>Filters</h3>
@@ -216,6 +230,7 @@ class App extends React.Component {
                 ></input>
                 <p>GRAPHIC DESIGNER</p>
               </label>
+              {/*
               <Row className="sortBy">
                 <Col xs={8}>
                   <h3>Sort By</h3>
@@ -235,18 +250,20 @@ class App extends React.Component {
                   </label>
                 </Col>
               </Row>
+              */}
               <Row className="mainSite">
                 <h3 onClick={this.aboutState}>About</h3>
-                <h3>Main Site</h3>
+                <h3>
+                  <a href="">Main Site</a>
+                </h3>
               </Row>
             </div>
           </Col>
 
           <Col xs={20} sm={15} md={15}>
-            <Row>{this.allMemberMap()}</Row>
+            <Row id="memberMap">{this.allMemberMap()}</Row>
           </Col>
         </Row>
-        
       </div>
     );
   }

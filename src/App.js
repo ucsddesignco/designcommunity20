@@ -33,7 +33,8 @@ class App extends React.Component {
       UXEngineer: false,
       Graphic: false,
       allCommunity: allMembers,
-      aboutButton: false
+      aboutButton: false,
+      hamburger: true
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -41,6 +42,7 @@ class App extends React.Component {
     this.resetFilters = this.resetFilters.bind(this);
     this.aboutState = this.aboutState.bind(this);
     this.aboutCallback = this.aboutCallback.bind(this);
+    this.hamburgerMenu = this.hamburgerMenu.bind(this);
   }
 
   handleChange(event) {
@@ -93,6 +95,22 @@ class App extends React.Component {
     });
   }
 
+  hamburgerMenu(){
+
+    let val = !this.state.hamburger;
+
+    this.setState({
+      hamburger: val
+    })
+
+    console.log("hamburger", this.state.hamburger)
+    if(this.state.hamburger === false){
+      document.getElementById("menuContents").style.display="block"
+    } else {
+      document.getElementById("menuContents").style.display="none"
+    }
+  }
+
   allMemberMap() {
     console.log("allMembers", this.state);
     return this.state.allCommunity.map(member => {
@@ -108,7 +126,7 @@ class App extends React.Component {
           (this.state.Graphic && member.tags.includes("Graphic"))
         ) {
           return (
-            <Col xs={10} sm={5} lg={4}>
+            <Col xs={10} sm={10} md={5} lg={4}>
               <Member
                 image={member.image}
                 name={member.name}
@@ -144,7 +162,7 @@ class App extends React.Component {
         )}
 
         <Row id="mainContainer">
-          <Col xs={20} sm={5} md={5}>
+          <Col xs={20} sm={20} md={5}>
             <div className="leftSide">
               <div id="logoMenu">
                 <img
@@ -156,10 +174,11 @@ class App extends React.Component {
                   src={require("./images/hamburgerMenu.svg")}
                   alt="Menu"
                   id="hamburgerMenu"
+                  onClick={()=>{this.hamburgerMenu()}}
                 />
               </div>
 
-              <div className="menuContents">
+              <div id="menuContents">
                 <button type="button" id="nominateBtn">
                   NOMINATE
                 </button>
@@ -268,7 +287,7 @@ class App extends React.Component {
             </div>
           </Col>
 
-          <Col xs={20} sm={15} md={15}>
+          <Col xs={20} sm={20} md={15}>
             <Row id="memberMap">{this.allMemberMap()}</Row>
           </Col>
         </Row>

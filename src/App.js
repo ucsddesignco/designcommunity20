@@ -64,12 +64,6 @@ class App extends React.Component {
     this.setState({
       aboutButton: val
     });
-
-    if (this.state.aboutButton === true) {
-      document.getElementById("memberMap").style.position = "fixed";
-    } else {
-      document.getElementById("memberMap").style.position = "static";
-    }
   }
 
   resetFilters() {
@@ -152,85 +146,98 @@ class App extends React.Component {
         <Row id="mainContainer">
           <Col xs={20} sm={5} md={5}>
             <div className="leftSide">
-              <img src={require("./images/designCommunity.svg")}></img>
-              <button type="button" id="nominateBtn">
-                NOMINATE
-              </button>
-
-              <div id="filter">
-                <h3>Filters</h3>
-                <h4 onClick={this.resetFilters}>Clear All</h4>
-                <br />
+              <div id="logoMenu">
+                <img
+                  src={require("./images/designCommunity.svg")}
+                  alt="Design Community"
+                  id="communityLogo"
+                ></img>
+                <img
+                  src={require("./images/hamburgerMenu.svg")}
+                  alt="Menu"
+                  id="hamburgerMenu"
+                />
               </div>
-              {
-                //Need to add form action and all
-              }
 
-              <label>
-                <input
-                  type="checkbox"
-                  name="UXDesigner"
-                  className="checkbox"
-                  value="UXDesigner"
-                  onChange={this.handleChange}
-                ></input>
-                <p>UX DESIGNER</p>
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  name="VisDesigner"
-                  className="checkbox"
-                  onChange={this.handleChange}
-                ></input>
-                <p>VISUAL DESIGNER</p>
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  name="ProdDesigner"
-                  className="checkbox"
-                  onChange={this.handleChange}
-                ></input>
-                <p>PRODUCT DESIGNER</p>
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  name="ContentStrategist"
-                  className="checkbox"
-                  onChange={this.handleChange}
-                ></input>
-                <p>CONTENT STRATEGIST</p>
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  name="UXResearcher"
-                  className="checkbox"
-                  onChange={this.handleChange}
-                ></input>
-                <p>UX RESEARCHER</p>
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  name="UXEngineer"
-                  className="checkbox"
-                  onChange={this.handleChange}
-                ></input>
-                <p>UX ENGINEER</p>
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  name="Graphic"
-                  className="checkbox"
-                  onChange={this.handleChange}
-                ></input>
-                <p>GRAPHIC DESIGNER</p>
-              </label>
-              {/*
+              <div className="menuContents">
+                <button type="button" id="nominateBtn">
+                  NOMINATE
+                </button>
+
+                <div id="filter">
+                  <h3>Filters</h3>
+                  <h4 onClick={this.resetFilters}>Clear All</h4>
+                  <br />
+                </div>
+                {
+                  //Need to add form action and all
+                }
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="UXDesigner"
+                    className="checkbox"
+                    value="UXDesigner"
+                    onChange={this.handleChange}
+                  ></input>
+                  <p>UX DESIGNER</p>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="VisDesigner"
+                    className="checkbox"
+                    onChange={this.handleChange}
+                  ></input>
+                  <p>VISUAL DESIGNER</p>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="ProdDesigner"
+                    className="checkbox"
+                    onChange={this.handleChange}
+                  ></input>
+                  <p>PRODUCT DESIGNER</p>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="ContentStrategist"
+                    className="checkbox"
+                    onChange={this.handleChange}
+                  ></input>
+                  <p>CONTENT STRATEGIST</p>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="UXResearcher"
+                    className="checkbox"
+                    onChange={this.handleChange}
+                  ></input>
+                  <p>UX RESEARCHER</p>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="UXEngineer"
+                    className="checkbox"
+                    onChange={this.handleChange}
+                  ></input>
+                  <p>UX ENGINEER</p>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="Graphic"
+                    className="checkbox"
+                    onChange={this.handleChange}
+                  ></input>
+                  <p>GRAPHIC DESIGNER</p>
+                </label>
+                {/*
               <Row className="sortBy">
                 <Col xs={8}>
                   <h3>Sort By</h3>
@@ -251,12 +258,13 @@ class App extends React.Component {
                 </Col>
               </Row>
               */}
-              <Row className="mainSite">
-                <h3 onClick={this.aboutState}>About</h3>
-                <h3>
-                  <a href="">Main Site</a>
-                </h3>
-              </Row>
+                <Row className="mainSite">
+                  <h3 onClick={this.aboutState}>About</h3>
+                  <h3>
+                    <a href="">Main Site</a>
+                  </h3>
+                </Row>
+              </div>
             </div>
           </Col>
 

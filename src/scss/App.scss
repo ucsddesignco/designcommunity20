@@ -8,23 +8,30 @@ html {
 
 .container {
   margin: $spacer2;
+  font-size: 10px;
+
+  #nominateBtn {
+    text-align: center;
+    width: 100%;
+  }
 
   .mainSite {
     position: absolute;
     bottom: $spacer3;
+    padding-left: $spacer1;
 
-    h3:first-child{
+    h3:first-child {
       cursor: pointer;
     }
     h3:last-child {
       margin-left: $spacer2;
 
-      a{
+      a {
         text-decoration: none;
       }
     }
 
-    h3:hover{
+    h3:hover {
       opacity: 0.5;
     }
   }
@@ -37,19 +44,56 @@ html {
       z-index: 10;
       height: 100%;
 
-      img {
-        width: 100%;
+      #logoMenu {
+        #communityLogo {
+          width: 100%;
+        }
+
+        #hamburgerMenu {
+          display: none;
+        }
       }
     }
   }
 
   @media screen and (max-width: $sm) {
-    .leftSide {
-      width: 100%;
-    }
 
-    #nominateBtn {
-      text-align: center;
+    .leftSide {
+
+      p{
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      #filter{
+        margin-bottom: $spacer2;
+      }
+
+
+      width: 100%;
+      height: 100vh;
+
+      #logoMenu {
+        margin-bottom: $spacer2;
+        #communityLogo {
+          width: 60%;
+        }
+
+        #hamburgerMenu {
+          width: 6%;
+          margin-left: 34%;
+        }
+      }
+
+      #nominateBtn{
+        font-size: 14px;
+        height: $spacer3;
+
+      }
+
+      // .menuContents{
+      //   display: none;
+      // }
     }
   }
 
@@ -153,6 +197,10 @@ option {
       width: 2rem;
       padding-top: $spacer2;
       float: right;
+    }
+
+    #closeButton:hover {
+      cursor: pointer;
     }
 
     h4 {

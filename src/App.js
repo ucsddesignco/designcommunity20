@@ -13,10 +13,7 @@ import {
   setConfiguration
 } from "react-grid-system";
 
-import NominationForm from "./components/nominationForm";
-import axios from "axios";
 import About from "./components/about";
-const API_URL = "http://localhost:8000/api/members";
 
 setConfiguration({ gridColumns: 20 });
 
@@ -95,20 +92,19 @@ class App extends React.Component {
     });
   }
 
-  hamburgerMenu(){
-
+  hamburgerMenu() {
     let val = !this.state.hamburger;
+    if (this.state.hamburger === true) {
+      document.getElementById("menuContents").style.display = "block";
+    } else {
+      document.getElementById("menuContents").style.display = "none";
+    }
 
     this.setState({
       hamburger: val
-    })
+    });
 
-    console.log("hamburger", this.state.hamburger)
-    if(this.state.hamburger === false){
-      document.getElementById("menuContents").style.display="block"
-    } else {
-      document.getElementById("menuContents").style.display="none"
-    }
+    console.log("hamburger", this.state.hamburger);
   }
 
   allMemberMap() {
@@ -156,7 +152,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        {console.log("RENDER AGAIN")}
         {this.state.aboutButton && (
           <About parentCallback={this.aboutCallback} />
         )}
@@ -174,7 +169,9 @@ class App extends React.Component {
                   src={require("./images/hamburgerMenu.svg")}
                   alt="Menu"
                   id="hamburgerMenu"
-                  onClick={()=>{this.hamburgerMenu()}}
+                  onClick={() => {
+                    this.hamburgerMenu();
+                  }}
                 />
               </div>
 
@@ -192,68 +189,82 @@ class App extends React.Component {
                   //Need to add form action and all
                 }
 
-                <label>
-                  <input
-                    type="checkbox"
-                    name="UXDesigner"
-                    className="checkbox"
-                    value="UXDesigner"
-                    onChange={this.handleChange}
-                  ></input>
+                <input
+                  class="styled-checkbox checkbox"
+                  id="UXDesigner"
+                  type="checkbox"
+                  name="UXDesigner"
+                  value="UXDesigner"
+                  onChange={this.handleChange}
+                />
+                <label for="UXDesigner">
                   <p>UX DESIGNER</p>
                 </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="VisDesigner"
-                    className="checkbox"
-                    onChange={this.handleChange}
-                  ></input>
+                <input
+                  class="styled-checkbox checkbox"
+                  id="VisDesigner"
+                  type="checkbox"
+                  name="VisDesigner"
+                  value="VisDesigner"
+                  onChange={this.handleChange}
+                />
+                <label for="VisDesigner">
                   <p>VISUAL DESIGNER</p>
                 </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="ProdDesigner"
-                    className="checkbox"
-                    onChange={this.handleChange}
-                  ></input>
+                <input
+                  class="styled-checkbox checkbox"
+                  id="ProdDesigner"
+                  type="checkbox"
+                  name="ProdDesigner"
+                  value="ProdDesigner"
+                  onChange={this.handleChange}
+                />
+                <label for="ProdDesigner">
                   <p>PRODUCT DESIGNER</p>
                 </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="ContentStrategist"
-                    className="checkbox"
-                    onChange={this.handleChange}
-                  ></input>
+                <input
+                  class="styled-checkbox checkbox"
+                  id="ContentStrategist"
+                  type="checkbox"
+                  name="ContentStrategist"
+                  value="ContentStrategist"
+                  onChange={this.handleChange}
+                />
+                <label for="ContentStrategist">
                   <p>CONTENT STRATEGIST</p>
                 </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="UXResearcher"
-                    className="checkbox"
-                    onChange={this.handleChange}
-                  ></input>
+                <input
+                  class="styled-checkbox checkbox"
+                  id="UXResearcher"
+                  type="checkbox"
+                  name="UXResearcher"
+                  value="UXResearcher"
+                  onChange={this.handleChange}
+                />
+                <label for="UXResearcher">
                   <p>UX RESEARCHER</p>
                 </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="UXEngineer"
-                    className="checkbox"
-                    onChange={this.handleChange}
-                  ></input>
+                <input
+                  class="styled-checkbox checkbox"
+                  id="UXEngineer"
+                  type="checkbox"
+                  name="UXEngineer"
+                  value="UXEngineer"
+                  onChange={this.handleChange}
+                />
+                <label for="UXEngineer">
                   <p>UX ENGINEER</p>
                 </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="Graphic"
-                    className="checkbox"
-                    onChange={this.handleChange}
-                  ></input>
+
+                <input
+                  class="styled-checkbox checkbox"
+                  id="Graphic"
+                  type="checkbox"
+                  name="Graphic"
+                  value="Graphic"
+                  onChange={this.handleChange}
+                />
+                <label for="Graphic">
                   <p>GRAPHIC DESIGNER</p>
                 </label>
                 {/*

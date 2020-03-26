@@ -62,7 +62,9 @@ html {
       cursor: pointer;
     }
     h3:last-child {
-      margin-left: 1.8vw;
+      position: relative;
+      margin-left: $spacer2;
+      cursor: pointer;
 
       a {
         text-decoration: none;
@@ -131,7 +133,7 @@ html {
         z-index: 99;
 
         #communityLogo {
-          width: 55%;
+          width: 50%;
           position: fixed;
           left: $spacer2;
         }
@@ -148,12 +150,12 @@ html {
         height: $spacer3;
       }
 
-      .mainSite{
+      .mainSite {
         bottom: 0;
       }
     }
 
-    #memberMap{
+    #memberMap {
       margin-top: $spacer2;
     }
   }

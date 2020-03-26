@@ -296,10 +296,10 @@ class App extends React.Component {
                 <Row className="mainSite">
                   <h3 onClick={this.aboutState}>About</h3>
                   <h3>
-                    <a href="">Main Site</a>
+                    <a href="http://www.ucsddesign.co/" target="_blank">Main Site</a>
+                    <img src={require("./images/Union.svg")} />
                   </h3>
                 </Row>
-                <br style={{clear: "both"}} />
               </div>
             </div>
           </Col>

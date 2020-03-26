@@ -62,7 +62,7 @@ html {
       cursor: pointer;
     }
     h3:last-child {
-      margin-left: $spacer2;
+      margin-left: 1.8vw;
 
       a {
         text-decoration: none;
@@ -205,13 +205,19 @@ option {
 
   > p {
     margin: $base 0;
+    overflow: hidden;
   }
   .info {
     display: flex;
     margin-top: $base;
     p {
       margin-left: $spacer1;
+      overflow: hidden;
     }
+  }
+
+  a{
+    text-overflow: clip;
   }
 
   margin-bottom: $spacer2;

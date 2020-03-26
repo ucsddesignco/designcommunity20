@@ -1,22 +1,25 @@
 import React from "react";
 import { Row, Col } from "react-grid-system";
+import WOW from "wowjs";
 
 class About extends React.Component {
-
-    constructor(props){
-        super(props);
-        this.sendData = this.sendData.bind(this);
-    }
+  constructor(props) {
+    super(props);
+    this.sendData = this.sendData.bind(this);
+  }
   componentDidMount() {
     document.getElementById("mainContainer").style.opacity = "0.2";
+    new WOW.WOW().init();
+
+    let aboutPage = document.getElementsByClassName("aboutPage")[0];
   }
 
   componentWillUnmount() {
     document.getElementById("mainContainer").style.opacity = "1";
   }
 
-  sendData(){
-      this.props.parentCallback();
+  sendData() {
+    this.props.parentCallback();
   }
 
   render() {
@@ -24,9 +27,12 @@ class About extends React.Component {
       <div className="aboutPage">
         <div id="about-dcom">
           <h4>About the UCSD Design Co Community</h4>
-          <img src={require("../images/icon.svg")} id="closeButton"
-          onClick={this.sendData}/>
-          <br style={{clear: "both"}} />
+          <img
+            src={require("../images/icon.svg")}
+            id="closeButton"
+            onClick={this.sendData}
+          />
+          <br style={{ clear: "both" }} />
         </div>
 
         <h1>About</h1>

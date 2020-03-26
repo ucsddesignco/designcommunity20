@@ -23,7 +23,7 @@ html {
     vertical-align: text-top;
     width: 16px;
     height: 16px;
-    background:black;
+    background: black;
     border: 1px solid white;
   }
 
@@ -102,12 +102,14 @@ html {
     .leftSide {
       #menuContents {
         display: none;
-        height: 90vh;
+        height: 80vh;
+        margin-top: $spacer2;
       }
+
       width: 100%;
 
       p {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
       }
 
@@ -116,14 +118,28 @@ html {
       }
 
       #logoMenu {
-        margin-bottom: $spacer2;
+        padding-top: $spacer2;
+        padding-bottom: $spacer2;
+        width: 100%;
+        height: $spacer2;
+        background-color: $black;
+
+        margin-top: 0 !important;
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+
         #communityLogo {
-          width: 50%;
+          width: 60%;
+          position: fixed;
+          left: $spacer2;
         }
 
         #hamburgerMenu {
-          width: 5%;
-          margin-left: 45%;
+          padding-top: 1%;
+          position: fixed;
+          right: $spacer2;
         }
       }
 
@@ -131,6 +147,14 @@ html {
         font-size: 14px;
         height: $spacer3;
       }
+
+      .mainSite{
+        bottom: 0;
+      }
+    }
+
+    #memberMap{
+      padding-top: $spacer3;
     }
   }
 
@@ -165,10 +189,6 @@ html {
     height: 5rem;
     background-color: $black;
     margin-top: $spacer2;
-  }
-
-  .checkbox {
-    border: 2px solid purple;
   }
 
   label {
@@ -214,10 +234,6 @@ option {
       margin-left: $spacer1;
       overflow: hidden;
     }
-  }
-
-  a{
-    text-overflow: clip;
   }
 
   margin-bottom: $spacer2;

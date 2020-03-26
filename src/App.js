@@ -2,6 +2,7 @@ import React from "react";
 import "./scss/App.scss";
 import Member from "./components/member";
 import allMembers from "./components/allMembers.js";
+import HamburgerMenu from "react-hamburger-menu";
 import { StickyContainer, Sticky } from "react-sticky";
 
 import {
@@ -31,7 +32,7 @@ class App extends React.Component {
       Graphic: false,
       allCommunity: allMembers,
       aboutButton: false,
-      hamburger: true
+      menuOpen: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -39,7 +40,7 @@ class App extends React.Component {
     this.resetFilters = this.resetFilters.bind(this);
     this.aboutState = this.aboutState.bind(this);
     this.aboutCallback = this.aboutCallback.bind(this);
-    this.hamburgerMenu = this.hamburgerMenu.bind(this);
+    this.handleMenuOpen = this.handleMenuOpen.bind(this);
   }
 
   handleChange(event) {
@@ -92,19 +93,17 @@ class App extends React.Component {
     });
   }
 
-  hamburgerMenu() {
-    let val = !this.state.hamburger;
-    if (this.state.hamburger === true) {
+  handleMenuOpen() {
+    if (this.state.menuOpen === false) {
       document.getElementById("menuContents").style.display = "block";
     } else {
       document.getElementById("menuContents").style.display = "none";
     }
 
+    let val = !this.state.menuOpen;
     this.setState({
-      hamburger: val
+      menuOpen: val
     });
-
-    console.log("hamburger", this.state.hamburger);
   }
 
   allMemberMap() {
@@ -165,14 +164,20 @@ class App extends React.Component {
                   alt="Design Community"
                   id="communityLogo"
                 ></img>
-                <img
-                  src={require("./images/hamburgerMenu.svg")}
-                  alt="Menu"
-                  id="hamburgerMenu"
-                  onClick={() => {
-                    this.hamburgerMenu();
-                  }}
-                />
+                <div id="hamburgerMenu">
+                  <HamburgerMenu
+                    className="hamburger"
+                    isOpen={this.state.menuOpen}
+                    menuClicked={this.handleMenuOpen.bind(this)}
+                    width={30}
+                    height={20}
+                    strokeWidth={3}
+                    rotate={0}
+                    color="white"
+                    borderRadius={0}
+                    animationDuration={0.5}
+                  />
+                </div>
               </div>
 
               <div id="menuContents">
@@ -294,6 +299,7 @@ class App extends React.Component {
                     <a href="">Main Site</a>
                   </h3>
                 </Row>
+                <br style={{clear: "both"}} />
               </div>
             </div>
           </Col>

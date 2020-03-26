@@ -118,8 +118,8 @@ html {
       }
 
       #logoMenu {
-        padding-top: $spacer2;
-        padding-bottom: $spacer2;
+        padding-top: $spacer1;
+        padding-bottom: $spacer1;
         width: 100%;
         height: $spacer2;
         background-color: $black;
@@ -131,7 +131,7 @@ html {
         z-index: 99;
 
         #communityLogo {
-          width: 60%;
+          width: 55%;
           position: fixed;
           left: $spacer2;
         }
@@ -154,7 +154,7 @@ html {
     }
 
     #memberMap{
-      padding-top: $spacer3;
+      margin-top: $spacer2;
     }
   }
 

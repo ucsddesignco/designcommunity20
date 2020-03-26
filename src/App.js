@@ -170,8 +170,8 @@ class App extends React.Component {
                     isOpen={this.state.menuOpen}
                     menuClicked={this.handleMenuOpen.bind(this)}
                     width={30}
-                    height={20}
-                    strokeWidth={3}
+                    height={16}
+                    strokeWidth={2}
                     rotate={0}
                     color="white"
                     borderRadius={0}

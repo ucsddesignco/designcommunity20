@@ -92,7 +92,7 @@ class App extends React.Component {
   handleAgree() {
     let mainContainer = document.getElementById("mainContainer");
 
-    mainContainer.style.pointerEvents = "none";
+    mainContainer.style.pointerEvents = "auto";
     mainContainer.style.position = "static";
     mainContainer.style.opacity = "1";
     localStorage.setItem("user-visited", true);
@@ -155,13 +155,13 @@ class App extends React.Component {
           </Row>
           <Row justify="center" align="center">
             <Col xs={16} sm={9}>
-              <button id="disagreeBtn" onClick={this.handleDisagree}>
-                I DISAGREE
+              <button id="agreeBtn" onClick={this.handleAgree}>
+                I AGREE
               </button>
             </Col>
             <Col xs={16} sm={9}>
-              <button id="agreeBtn" onClick={this.handleAgree}>
-                I AGREE
+              <button id="disagreeBtn" onClick={this.handleDisagree}>
+                I DISAGREE
               </button>
             </Col>
           </Row>

@@ -327,7 +327,7 @@ option {
   right: 0;
   z-index: 1000;
   background: $black;
-  width: 80%;
+  width: 90%;
   height: 100%;
   overflow: scroll;
 
@@ -355,7 +355,8 @@ option {
   }
 
   img {
-    width: 100%;
+    width: 90%;
+    margin-right: $spacer2;
   }
 
   #about-body-text {

@@ -34,8 +34,8 @@ class About extends React.Component {
           />
           <br style={{ clear: "both" }} />
         </div>
-        <Row>
-          <Col xs={20} md={11}>
+        <Row justify="center" align="center">
+          <Col xs={20} md={12} lg={10} xl={10}>
             {" "}
             <h4 id="about-body-text">
               Connecting you with your community!
@@ -54,7 +54,7 @@ class About extends React.Component {
               come join our community and be apart of something bigger!
             </h4>
           </Col>
-          <Col xs={20} md={8}>
+          <Col xs={20} md={20} lg={10} xl={10}>
             <img src={require("../images/aboutImg.png")} alt="Community" />
           </Col>
         </Row>

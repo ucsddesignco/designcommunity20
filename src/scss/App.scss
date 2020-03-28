@@ -375,5 +375,6 @@ option {
 @media screen and (max-width: $md) {
   .aboutPage {
     width: 90%;
+    overflow: scroll;
   }
 }

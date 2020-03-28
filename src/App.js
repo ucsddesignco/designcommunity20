@@ -360,7 +360,6 @@ class App extends React.Component {
   }
 
   allMemberMap() {
-    console.log("allMembers", this.state);
     return this.state.allCommunity.map(member => {
       if (this.state.numFilters > 0) {
         if (

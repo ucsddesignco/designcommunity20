@@ -126,7 +126,7 @@ html {
       #menuContents {
         display: none;
         height: 80vh;
-        margin-top: $spacer2;
+        margin-top: $spacer3;
       }
 
       width: 100%;
@@ -313,7 +313,7 @@ option {
 
 @media screen and (max-width: $md) {
   .aboutPage {
-    width: 80%;
+    width: 90%;
   }
 }
 

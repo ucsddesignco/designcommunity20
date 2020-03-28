@@ -6,6 +6,10 @@ html {
   background-color: $black;
 }
 
+/*
+* STYLED CHECKBOXES COMPONENT
+*/
+
 .styled-checkbox {
   position: absolute; // take it out of document flow
   opacity: 0; // hide it
@@ -71,7 +75,7 @@ html {
       position: relative;
       margin-left: $spacer2;
       cursor: pointer;
-      
+
       div {
         display: flex;
 
@@ -190,14 +194,19 @@ html {
     margin-top: $spacer2;
   }
 
+/*
+* FILTER COMPONENT
+*/
+
   #filter {
-    h4 {
+    h5 {
       float: right;
       cursor: pointer;
       padding-top: 4px;
+      margin-top: $spacer2;
     }
 
-    h4:hover {
+    h5:hover {
       text-decoration: underline;
     }
 
@@ -238,6 +247,10 @@ option {
   margin-top: $spacer1;
 }
 
+/*
+* MEMBER TILES COMPONENT
+*/
+
 .memberContainer {
   > img {
     width: 100%;
@@ -268,6 +281,49 @@ option {
   margin-bottom: $spacer2;
 }
 
+/*
+* CONFIRM BOX COMPONENT
+*/
+
+.confirmBox {
+  position: fixed;
+
+  border: 2px solid white;
+  background-color: $black;
+  z-index: 99999;
+
+  #disagreeBtn {
+    border: none;
+  }
+
+  button {
+    margin-bottom: $spacer2;
+  }
+}
+
+@media screen and (min-width: $md-end) {
+  .confirmBox {
+    top: 31%;
+    left: 32%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .confirmBox {
+    top: 30%;
+    left: 10%;
+    width: 80%;
+
+    #agreeBtn{
+      margin-top: 0;
+    }
+  }
+}
+
+/*
+* ABOUT COMPONENT
+*/
 .aboutPage {
   border: 2px solid $white;
   margin-top: -$spacer2;
@@ -275,11 +331,10 @@ option {
   right: 0;
   z-index: 1000;
   background: $black;
-  width: 50%;
+  width: 80%;
   height: 100%;
 
   #about-dcom {
-    margin-top: -$spacer1 !important;
     border-bottom: 2px solid $white;
     padding: 0 $spacer1 $spacer1 $spacer1;
 
@@ -303,31 +358,27 @@ option {
     margin: $spacer1;
   }
 
+  img {
+    width: 100%;
+  }
+
   #about-body-text {
-    font-size: 2.2rem;
-    line-height: 3.6rem;
-    margin: 0 $spacer1;
+    margin: $spacer2;
     border: none;
+
+    a {
+      vertical-align: inherit;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
 @media screen and (max-width: $md) {
   .aboutPage {
     width: 90%;
-  }
-}
-
-.nomination {
-  form {
-    label {
-      p {
-        margin-right: $spacer1;
-      }
-
-      input {
-        width: 100%;
-        border: none;
-      }
-    }
   }
 }

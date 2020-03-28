@@ -18,6 +18,8 @@ import About from "./components/about";
 
 setConfiguration({ gridColumns: 20 });
 
+let visited = localStorage.getItem("user-visited");
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -41,6 +43,21 @@ class App extends React.Component {
     this.aboutState = this.aboutState.bind(this);
     this.aboutCallback = this.aboutCallback.bind(this);
     this.handleMenuOpen = this.handleMenuOpen.bind(this);
+    this.handleDisagree = this.handleDisagree.bind(this);
+    this.handleAgree = this.handleAgree.bind(this);
+    this.confirmBox = this.confirmBox.bind(this);
+  }
+
+  componentDidMount() {
+    console.log(visited);
+
+    if (visited === null) {
+      visited = false;
+      let mainContainer = document.getElementById("mainContainer");
+      mainContainer.style.pointerEvents = "none";
+      mainContainer.style.opacity = "0.2";
+      mainContainer.style.position = "fixed";
+    }
   }
 
   handleChange(event) {
@@ -64,6 +81,23 @@ class App extends React.Component {
     this.setState({
       aboutButton: val
     });
+  }
+
+  handleDisagree() {
+    console.log("disagree");
+    window.open("http://www.ucsddesign.co", "_self");
+    window.close();
+  }
+
+  handleAgree() {
+    let mainContainer = document.getElementById("mainContainer");
+
+    mainContainer.style.pointerEvents = "none";
+    mainContainer.style.position = "static";
+    mainContainer.style.opacity = "1";
+    localStorage.setItem("user-visited", true);
+
+    document.getElementsByClassName("confirmBox")[0].style.display = "none";
   }
 
   resetFilters() {
@@ -104,6 +138,36 @@ class App extends React.Component {
     this.setState({
       menuOpen: val
     });
+  }
+
+  confirmBox() {
+    console.log(visited);
+    if (!visited) {
+      return (
+        <div className="confirmBox">
+          <Row justify="center" align="center">
+            <Col xs={18}>
+              <h4>
+                Before you enter the website, please understand that stolen work
+                is not tolerated under any circumstances.{" "}
+              </h4>
+            </Col>
+          </Row>
+          <Row justify="center" align="center">
+            <Col xs={16} sm={9}>
+              <button id="disagreeBtn" onClick={this.handleDisagree}>
+                I DISAGREE
+              </button>
+            </Col>
+            <Col xs={16} sm={9}>
+              <button id="agreeBtn" onClick={this.handleAgree}>
+                I AGREE
+              </button>
+            </Col>
+          </Row>
+        </div>
+      );
+    }
   }
 
   allMemberMap() {
@@ -149,11 +213,14 @@ class App extends React.Component {
   }
 
   render() {
+    console.log("RENVER AGAING");
     return (
       <div className="container">
         {this.state.aboutButton && (
           <About parentCallback={this.aboutCallback} />
         )}
+
+        {this.confirmBox()}
 
         <Row id="mainContainer">
           <Col xs={20} sm={20} md={5}>
@@ -181,13 +248,17 @@ class App extends React.Component {
               </div>
 
               <div id="menuContents">
-                <button type="button" id="nominateBtn">
+                <button
+                  type="button"
+                  id="nominateBtn"
+                  onClick={this.handleDisagree}
+                >
                   NOMINATE
                 </button>
 
                 <div id="filter">
                   <h3>Filters</h3>
-                  <h4 onClick={this.resetFilters}>Clear All</h4>
+                  <h5 onClick={this.resetFilters}>Clear All</h5>
                   <br />
                 </div>
                 {
@@ -298,14 +369,18 @@ class App extends React.Component {
                   <a href="http://www.ucsddesign.co/" target="_blank">
                     <div>
                       <h3>Main Site</h3>
-                      <svg viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "2.7rem"}}>
-                        <path 
-                          fill-rule="evenodd" 
-                          clip-rule="evenodd" 
-                          d="M13.2892 19.8011L13.2892 12.7929L37.1171 12.7929L37.1171 19.8011L37.116 19.8011L37.116 37.3225L30.8086 37.3225L30.8086 24.0167L14.5883 40.237L10.0719 35.7207L25.9915 19.8011L13.2892 19.8011Z" 
+                      <svg
+                        viewBox="0 0 50 51"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style={{ width: "2.7rem" }}
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.2892 19.8011L13.2892 12.7929L37.1171 12.7929L37.1171 19.8011L37.116 19.8011L37.116 37.3225L30.8086 37.3225L30.8086 24.0167L14.5883 40.237L10.0719 35.7207L25.9915 19.8011L13.2892 19.8011Z"
                           fill="white"
-                        >
-                        </path>
+                        ></path>
                       </svg>
                     </div>
                   </a>

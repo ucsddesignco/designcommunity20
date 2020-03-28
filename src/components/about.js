@@ -26,7 +26,7 @@ class About extends React.Component {
     return (
       <div className="aboutPage">
         <div id="about-dcom">
-          <h4>About the UCSD Design Co Community</h4>
+          <h1>About</h1>
           <img
             src={require("../images/icon.svg")}
             id="closeButton"
@@ -34,14 +34,30 @@ class About extends React.Component {
           />
           <br style={{ clear: "both" }} />
         </div>
-
-        <h1>About</h1>
-        <h4 id="about-body-text">
-          We aim to help people find notable and relevant voices It aims to help
-          people find notable and relevant voices It aims to help people find
-          notable and relevant voices It aims to help people find notable and
-          relevant voices
-        </h4>
+        <Row>
+          <Col xs={20} md={11}>
+            {" "}
+            <h4 id="about-body-text">
+              Connecting you with your community!
+              <br />
+              <br />
+              Inspired by{" "}
+              <a href="https://blackswho.design/">Blacks Who Design</a> and{" "}
+              <a href="https://womenwho.design/">Women Who Design</a>,{" "} our page
+              is an online directory aimed to connect UCSD student designers and
+              alumni with each other. Our goal is to cultivate a vibrant
+              community where people can share their work, build new
+              relationships, look for mentors, and much more. This community
+              page isn’t just for Design Co members, but for all student
+              designers at UCSD, from first-years to alumni. So, if you’re a
+              fellow designer looking to meet people who share your interests,
+              come join our community and be apart of something bigger!
+            </h4>
+          </Col>
+          <Col xs={20} md={8}>
+            <img src={require("../images/aboutImg.png")} alt="Community" />
+          </Col>
+        </Row>
       </div>
     );
   }

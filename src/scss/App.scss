@@ -194,7 +194,7 @@ html {
     margin-top: $spacer2;
   }
 
-/*
+  /*
 * FILTER COMPONENT
 */
 
@@ -329,6 +329,7 @@ option {
   background: $black;
   width: 80%;
   height: 100%;
+  overflow: scroll;
 
   #about-dcom {
     padding: 0 $spacer1 $spacer1 $spacer1;
@@ -375,6 +376,5 @@ option {
 @media screen and (max-width: $md) {
   .aboutPage {
     width: 90%;
-    overflow: scroll;
   }
 }

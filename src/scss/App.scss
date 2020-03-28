@@ -58,21 +58,42 @@ html {
     bottom: $spacer3;
     padding-left: $spacer1;
 
-    h3:first-child {
+    > h3 {
       cursor: pointer;
+      margin: 0;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
-    h3:last-child {
+    a {
+      text-decoration: none;
       position: relative;
       margin-left: $spacer2;
       cursor: pointer;
+      
+      div {
+        display: flex;
 
-      a {
-        text-decoration: none;
+        h3 {
+          line-height: 1.1;
+          margin: 0;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
 
-    h3:hover {
-      opacity: 0.5;
+    @media only screen and (max-width: $bottom-break) {
+      h3 {
+        font-size: 1.7vw;
+      }
+
+      a div svg {
+        width: 2.2vw !important;
+      }
     }
   }
 
@@ -120,8 +141,8 @@ html {
       }
 
       #logoMenu {
-        padding-top: $spacer1;
-        padding-bottom: $spacer1;
+        padding-top: $spacer2;
+        padding-bottom: $spacer2-3;
         width: 100%;
         height: $spacer2;
         background-color: $black;
@@ -142,6 +163,10 @@ html {
           padding-top: 1%;
           position: fixed;
           right: $spacer2;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
 
@@ -156,7 +181,7 @@ html {
     }
 
     #memberMap {
-      margin-top: $spacer2;
+      margin-top: $spacer2 + $spacer2-3;
     }
   }
 
@@ -236,6 +261,7 @@ option {
       margin-left: $spacer1;
       overflow: hidden;
       white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 

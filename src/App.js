@@ -293,12 +293,22 @@ class App extends React.Component {
                 </Col>
               </Row>
               */}
-                <Row className="mainSite">
+                <Row className="mainSite" style={{ alignItems: "baseline" }}>
                   <h3 onClick={this.aboutState}>About</h3>
-                  <h3>
-                    <a href="http://www.ucsddesign.co/" target="_blank">Main Site</a>
-                    <img src={require("./images/Union.svg")} />
-                  </h3>
+                  <a href="http://www.ucsddesign.co/" target="_blank">
+                    <div>
+                      <h3>Main Site</h3>
+                      <svg viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "2.7rem"}}>
+                        <path 
+                          fill-rule="evenodd" 
+                          clip-rule="evenodd" 
+                          d="M13.2892 19.8011L13.2892 12.7929L37.1171 12.7929L37.1171 19.8011L37.116 19.8011L37.116 37.3225L30.8086 37.3225L30.8086 24.0167L14.5883 40.237L10.0719 35.7207L25.9915 19.8011L13.2892 19.8011Z" 
+                          fill="white"
+                        >
+                        </path>
+                      </svg>
+                    </div>
+                  </a>
                 </Row>
               </div>
             </div>

@@ -9,20 +9,20 @@ class Member extends React.Component {
 
     let portfolio = this.props.portfolio.toUpperCase();
 
-    if (portfolio.length > 14) {
-      portfolio = portfolio.toString().substring(0, 12) + "...";
-    }
+    // if (portfolio.length > 14) {
+    //   portfolio = portfolio.toString().substring(0, 12) + "...";
+    // }
 
     let linkedin = this.props.linkedin.toUpperCase();
 
-    if (linkedin.length > 14) {
-      linkedin = linkedin.toString().substring(0, 12) + "...";
-    }
+    // if (linkedin.length > 14) {
+    //   linkedin = linkedin.toString().substring(0, 12) + "...";
+    // }
     return (
       <div className="memberContainer">
         <img src={require(`../images/team/${this.props.image}.png`)}></img>
-        <p>CLASS OF {this.props.year}</p>
-        <h2> {this.props.name}</h2>
+        <p>CLASS OF {this.props.year} </p>
+        <h2> {this.props.name} </h2>
         <div className="info">
           <img src={require("../images/globeVector.svg")}></img>
           <p>

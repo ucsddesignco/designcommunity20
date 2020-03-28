@@ -331,7 +331,6 @@ option {
   height: 100%;
 
   #about-dcom {
-    border-bottom: 2px solid $white;
     padding: 0 $spacer1 $spacer1 $spacer1;
 
     #closeButton {
@@ -345,7 +344,7 @@ option {
       cursor: pointer;
     }
 
-    h4 {
+    h1 {
       float: left;
     }
   }

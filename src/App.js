@@ -34,7 +34,7 @@ class App extends React.Component {
       Graphic: false,
       allCommunity: allMembers,
       aboutButton: false,
-      menuOpen: false, 
+      menuOpen: false,
       windowWidth: window.innerWidth
     };
 
@@ -62,20 +62,26 @@ class App extends React.Component {
       mainContainer.style.position = "fixed";
     }
 
-    console.log(this.state.windowWidth)
+    console.log(this.state.windowWidth);
 
-    window.addEventListener("resize", this.handleResize)
+    window.addEventListener("resize", this.handleResize);
   }
 
-  handleResize(){
-    console.log("RESIZING")
+  handleResize() {
+    console.log("RESIZING");
     this.setState({
       windowWidth: window.innerWidth
-    })
-    console.log(this.state.windowWidth)
+    });
+    console.log(this.state.windowWidth);
 
-    if(this.state.windowWidth > 768){
-      document.getElementById("menuContents").style.display = "block"
+    if (this.state.windowWidth > 767) {
+      document.getElementById("menuContents").style.display = "block";
+      this.setState({
+        menuOpen: false
+      })
+    }
+    else if (this.state.menuOpen === false) {
+      document.getElementById("menuContents").style.display = "none";
     }
   }
 
@@ -406,8 +412,10 @@ class App extends React.Component {
         {this.confirmBox()}
 
         <Row id="mainContainer">
-          <Col xs={20} sm={20} md={5}></Col>
-          {this.leftSideMenu()}
+          <Col xs={20} sm={20} md={5}>
+            {" "}
+            {this.leftSideMenu()}
+          </Col>
 
           <Col xs={20} sm={20} md={15}>
             <Row id="memberMap">{this.allMemberMap()}</Row>

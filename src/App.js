@@ -18,8 +18,6 @@ import About from "./components/about";
 
 setConfiguration({ gridColumns: 20 });
 
-let visited = localStorage.getItem("user-visited");
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -44,21 +42,19 @@ class App extends React.Component {
     this.aboutState = this.aboutState.bind(this);
     this.aboutCallback = this.aboutCallback.bind(this);
     this.handleMenuOpen = this.handleMenuOpen.bind(this);
-    this.handleDisagree = this.handleDisagree.bind(this);
-    this.handleAgree = this.handleAgree.bind(this);
-    this.confirmBox = this.confirmBox.bind(this);
+    // this.handleDisagree = this.handleDisagree.bind(this);
+    // this.handleAgree = this.handleAgree.bind(this);
+    // this.confirmBox = this.confirmBox.bind(this);
     this.leftSideMenu = this.leftSideMenu.bind(this);
     this.handleResize = this.handleResize.bind(this);
   }
 
   componentDidMount() {
-    console.log(visited);
+    // console.log(visited);
 
-    if (visited === null) {
-      visited = false;
-    }
-
-    console.log(this.state.windowWidth);
+    // if (visited === null) {
+    //   visited = false;
+    // }
 
     window.addEventListener("resize", this.handleResize);
   }
@@ -68,16 +64,14 @@ class App extends React.Component {
     this.setState({
       windowWidth: window.innerWidth
     });
-    console.log(this.state.windowWidth);
 
     if (this.state.windowWidth > 767) {
       document.getElementsByClassName("mainSite")[0].style.display = "flex";
       document.getElementById("menuContents").style.display = "block";
       this.setState({
         menuOpen: false
-      })
-    }
-    else if (this.state.menuOpen === false) {
+      });
+    } else if (this.state.menuOpen === false) {
       document.getElementsByClassName("mainSite")[0].style.display = "none";
       document.getElementById("menuContents").style.display = "none";
     }
@@ -106,22 +100,22 @@ class App extends React.Component {
     });
   }
 
-  handleDisagree() {
-    console.log("disagree");
-    window.open("http://www.ucsddesign.co", "_self");
-    window.close();
-  }
+  // handleDisagree() {
+  //   console.log("disagree");
+  //   window.open("http://www.ucsddesign.co", "_self");
+  //   window.close();
+  // }
 
-  handleAgree() {
-    let mainContainer = document.getElementById("mainContainer");
+  // handleAgree() {
+  //   let mainContainer = document.getElementById("mainContainer");
 
-    mainContainer.style.pointerEvents = "auto";
-    mainContainer.style.position = "static";
-    mainContainer.style.opacity = "1";
-    localStorage.setItem("user-visited", true);
+  //   mainContainer.style.pointerEvents = "auto";
+  //   mainContainer.style.position = "static";
+  //   mainContainer.style.opacity = "1";
+  //   localStorage.setItem("user-visited", true);
 
-    document.getElementsByClassName("confirmBox")[0].style.display = "none";
-  }
+  //   document.getElementsByClassName("confirmBox")[0].style.display = "none";
+  // }
 
   leftSideMenu() {
     return (
@@ -329,35 +323,35 @@ class App extends React.Component {
     });
   }
 
-  confirmBox() {
-    console.log(visited);
-    if (!visited) {
-      return (
-        <div className="confirmBox">
-          <Row justify="center" align="center">
-            <Col xs={18}>
-              <h4>
-                Before you enter the website, please understand that stolen work
-                is not tolerated under any circumstances.{" "}
-              </h4>
-            </Col>
-          </Row>
-          <Row justify="center" align="center">
-            <Col xs={16} sm={9}>
-              <button id="agreeBtn" onClick={this.handleAgree}>
-                I AGREE
-              </button>
-            </Col>
-            <Col xs={16} sm={9}>
-              <button id="disagreeBtn" onClick={this.handleDisagree}>
-                I DISAGREE
-              </button>
-            </Col>
-          </Row>
-        </div>
-      );
-    }
-  }
+  // confirmBox() {
+  //   console.log(visited);
+  //   if (!visited) {
+  //     return (
+  //       <div className="confirmBox">
+  //         <Row justify="center" align="center">
+  //           <Col xs={18}>
+  //             <h4>
+  //               Before you enter the website, please understand that stolen work
+  //               is not tolerated under any circumstances.{" "}
+  //             </h4>
+  //           </Col>
+  //         </Row>
+  //         <Row justify="center" align="center">
+  //           <Col xs={16} sm={9}>
+  //             <button id="agreeBtn" onClick={this.handleAgree}>
+  //               I AGREE
+  //             </button>
+  //           </Col>
+  //           <Col xs={16} sm={9}>
+  //             <button id="disagreeBtn" onClick={this.handleDisagree}>
+  //               I DISAGREE
+  //             </button>
+  //           </Col>
+  //         </Row>
+  //       </div>
+  //     );
+  //   }
+  // }
 
   allMemberMap() {
     return this.state.allCommunity.map(member => {
@@ -405,8 +399,6 @@ class App extends React.Component {
     return (
       <div className="container">
         <About parentCallback={this.aboutCallback} />
-
-        {this.confirmBox()}
 
         <Row id="mainContainer">
           <Col xs={20} sm={20} md={5}>

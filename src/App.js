@@ -56,10 +56,6 @@ class App extends React.Component {
 
     if (visited === null) {
       visited = false;
-      let mainContainer = document.getElementById("mainContainer");
-      // mainContainer.style.pointerEvents = "none";
-      // mainContainer.style.opacity = "0.2";
-      // mainContainer.style.position = "fixed";
     }
 
     console.log(this.state.windowWidth);
@@ -75,12 +71,14 @@ class App extends React.Component {
     console.log(this.state.windowWidth);
 
     if (this.state.windowWidth > 767) {
+      document.getElementsByClassName("mainSite")[0].style.display = "flex";
       document.getElementById("menuContents").style.display = "block";
       this.setState({
         menuOpen: false
       })
     }
     else if (this.state.menuOpen === false) {
+      document.getElementsByClassName("mainSite")[0].style.display = "none";
       document.getElementById("menuContents").style.display = "none";
     }
   }
@@ -318,8 +316,10 @@ class App extends React.Component {
 
   handleMenuOpen() {
     if (this.state.menuOpen === false) {
+      document.getElementsByClassName("mainSite")[0].style.display = "flex";
       document.getElementById("menuContents").style.display = "block";
     } else {
+      document.getElementsByClassName("mainSite")[0].style.display = "none";
       document.getElementById("menuContents").style.display = "none";
     }
 
@@ -404,10 +404,6 @@ class App extends React.Component {
     console.log("RENVER AGAING");
     return (
       <div className="container">
-        {/* {this.state.aboutButton && (
-          <About parentCallback={this.aboutCallback} />
-        )} */}
-
         <About parentCallback={this.aboutCallback} />
 
         {this.confirmBox()}

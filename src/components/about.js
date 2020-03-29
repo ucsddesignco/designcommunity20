@@ -56,6 +56,12 @@ class About extends React.Component {
   componentDidMount() {
     new WOW.WOW().init();
     document.addEventListener("keydown", this.escFunction, false);
+
+    if (document.getElementById("menuContents").style.display == "block") {
+      document.getElementsByClassName("mainSite")[0].style.display = "flex";
+    } else {
+      document.getElementsByClassName("mainSite")[0].style.display = "none";
+    }
   }
 
   componentWillUnmount() {

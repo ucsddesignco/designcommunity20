@@ -42,19 +42,11 @@ class App extends React.Component {
     this.aboutState = this.aboutState.bind(this);
     this.aboutCallback = this.aboutCallback.bind(this);
     this.handleMenuOpen = this.handleMenuOpen.bind(this);
-    // this.handleDisagree = this.handleDisagree.bind(this);
-    // this.handleAgree = this.handleAgree.bind(this);
-    // this.confirmBox = this.confirmBox.bind(this);
     this.leftSideMenu = this.leftSideMenu.bind(this);
     this.handleResize = this.handleResize.bind(this);
   }
 
   componentDidMount() {
-    // console.log(visited);
-
-    // if (visited === null) {
-    //   visited = false;
-    // }
 
     window.addEventListener("resize", this.handleResize);
   }
@@ -99,23 +91,6 @@ class App extends React.Component {
       aboutButton: val
     });
   }
-
-  // handleDisagree() {
-  //   console.log("disagree");
-  //   window.open("http://www.ucsddesign.co", "_self");
-  //   window.close();
-  // }
-
-  // handleAgree() {
-  //   let mainContainer = document.getElementById("mainContainer");
-
-  //   mainContainer.style.pointerEvents = "auto";
-  //   mainContainer.style.position = "static";
-  //   mainContainer.style.opacity = "1";
-  //   localStorage.setItem("user-visited", true);
-
-  //   document.getElementsByClassName("confirmBox")[0].style.display = "none";
-  // }
 
   leftSideMenu() {
     return (
@@ -234,48 +209,6 @@ class App extends React.Component {
           <label for="Graphic">
             <p>GRAPHIC DESIGNER</p>
           </label>
-          {/*
-    <Row className="sortBy">
-      <Col xs={8}>
-        <h3>Sort By</h3>
-      </Col>
-      <Col xs={12}>
-        <label>
-          <select
-            id="year"
-            onChange={() => {
-              console.log("selected");
-            }}
-          >
-            <option value="none">NONE</option>
-            <option value="ascending">YEAR: ASCENDING</option>
-            <option value="descending">YEAR: DESCENDING</option>
-          </select>
-        </label>
-      </Col>
-    </Row>
-    */}
-          {/* <Row className="mainSite" style={{ alignItems: "baseline" }}>
-            <h3 onClick={this.aboutState}>About</h3>
-            <a href="http://www.ucsddesign.co/" target="_blank">
-              <div>
-                <h3>Main Site</h3>
-                <svg
-                  viewBox="0 0 50 51"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style={{ width: "2.7rem" }}
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M13.2892 19.8011L13.2892 12.7929L37.1171 12.7929L37.1171 19.8011L37.116 19.8011L37.116 37.3225L30.8086 37.3225L30.8086 24.0167L14.5883 40.237L10.0719 35.7207L25.9915 19.8011L13.2892 19.8011Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-          </Row> */}
         </div>
       </div>
     );
@@ -322,36 +255,6 @@ class App extends React.Component {
       menuOpen: val
     });
   }
-
-  // confirmBox() {
-  //   console.log(visited);
-  //   if (!visited) {
-  //     return (
-  //       <div className="confirmBox">
-  //         <Row justify="center" align="center">
-  //           <Col xs={18}>
-  //             <h4>
-  //               Before you enter the website, please understand that stolen work
-  //               is not tolerated under any circumstances.{" "}
-  //             </h4>
-  //           </Col>
-  //         </Row>
-  //         <Row justify="center" align="center">
-  //           <Col xs={16} sm={9}>
-  //             <button id="agreeBtn" onClick={this.handleAgree}>
-  //               I AGREE
-  //             </button>
-  //           </Col>
-  //           <Col xs={16} sm={9}>
-  //             <button id="disagreeBtn" onClick={this.handleDisagree}>
-  //               I DISAGREE
-  //             </button>
-  //           </Col>
-  //         </Row>
-  //       </div>
-  //     );
-  //   }
-  // }
 
   allMemberMap() {
     return this.state.allCommunity.map(member => {

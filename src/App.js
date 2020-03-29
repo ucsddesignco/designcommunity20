@@ -57,9 +57,9 @@ class App extends React.Component {
     if (visited === null) {
       visited = false;
       let mainContainer = document.getElementById("mainContainer");
-      mainContainer.style.pointerEvents = "none";
-      mainContainer.style.opacity = "0.2";
-      mainContainer.style.position = "fixed";
+      // mainContainer.style.pointerEvents = "none";
+      // mainContainer.style.opacity = "0.2";
+      // mainContainer.style.position = "fixed";
     }
 
     console.log(this.state.windowWidth);
@@ -165,7 +165,7 @@ class App extends React.Component {
           }
 
           <input
-            class="styled-checkbox checkbox"
+            className="styled-checkbox checkbox"
             id="UXDesigner"
             type="checkbox"
             name="UXDesigner"
@@ -176,7 +176,7 @@ class App extends React.Component {
             <p>UX DESIGNER</p>
           </label>
           <input
-            class="styled-checkbox checkbox"
+            className="styled-checkbox checkbox"
             id="VisDesigner"
             type="checkbox"
             name="VisDesigner"
@@ -187,7 +187,7 @@ class App extends React.Component {
             <p>VISUAL DESIGNER</p>
           </label>
           <input
-            class="styled-checkbox checkbox"
+            className="styled-checkbox checkbox"
             id="ProdDesigner"
             type="checkbox"
             name="ProdDesigner"
@@ -198,7 +198,7 @@ class App extends React.Component {
             <p>PRODUCT DESIGNER</p>
           </label>
           <input
-            class="styled-checkbox checkbox"
+            className="styled-checkbox checkbox"
             id="ContentStrategist"
             type="checkbox"
             name="ContentStrategist"
@@ -209,7 +209,7 @@ class App extends React.Component {
             <p>CONTENT STRATEGIST</p>
           </label>
           <input
-            class="styled-checkbox checkbox"
+            className="styled-checkbox checkbox"
             id="UXResearcher"
             type="checkbox"
             name="UXResearcher"
@@ -220,7 +220,7 @@ class App extends React.Component {
             <p>UX RESEARCHER</p>
           </label>
           <input
-            class="styled-checkbox checkbox"
+            className="styled-checkbox checkbox"
             id="UXEngineer"
             type="checkbox"
             name="UXEngineer"
@@ -232,7 +232,7 @@ class App extends React.Component {
           </label>
 
           <input
-            class="styled-checkbox checkbox"
+            className="styled-checkbox checkbox"
             id="Graphic"
             type="checkbox"
             name="Graphic"
@@ -263,7 +263,7 @@ class App extends React.Component {
       </Col>
     </Row>
     */}
-          <Row className="mainSite" style={{ alignItems: "baseline" }}>
+          {/* <Row className="mainSite" style={{ alignItems: "baseline" }}>
             <h3 onClick={this.aboutState}>About</h3>
             <a href="http://www.ucsddesign.co/" target="_blank">
               <div>
@@ -275,15 +275,15 @@ class App extends React.Component {
                   style={{ width: "2.7rem" }}
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M13.2892 19.8011L13.2892 12.7929L37.1171 12.7929L37.1171 19.8011L37.116 19.8011L37.116 37.3225L30.8086 37.3225L30.8086 24.0167L14.5883 40.237L10.0719 35.7207L25.9915 19.8011L13.2892 19.8011Z"
                     fill="white"
                   ></path>
                 </svg>
               </div>
             </a>
-          </Row>
+          </Row> */}
         </div>
       </div>
     );
@@ -404,9 +404,11 @@ class App extends React.Component {
     console.log("RENVER AGAING");
     return (
       <div className="container">
-        {this.state.aboutButton && (
+        {/* {this.state.aboutButton && (
           <About parentCallback={this.aboutCallback} />
-        )}
+        )} */}
+
+        <About parentCallback={this.aboutCallback} />
 
         {this.confirmBox()}
 

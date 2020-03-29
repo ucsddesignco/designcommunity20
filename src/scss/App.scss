@@ -58,9 +58,11 @@ html {
   }
 
   .mainSite {
-    position: absolute;
-    bottom: $spacer3;
-    padding-left: $spacer1;
+    position: fixed;
+    bottom: $spacer2;
+    left: $spacer2;
+    margin: 0 !important;
+    z-index: 11;
 
     > h3 {
       cursor: pointer;
@@ -90,7 +92,7 @@ html {
       }
     }
 
-    @media only screen and (max-width: $bottom-break) {
+    @media screen and (max-width: $bottom-break) and (min-width: $md) {
       h3 {
         font-size: 1.7vw;
       }
@@ -326,10 +328,13 @@ option {
   position: fixed;
   right: 0;
   z-index: 1000;
-  background: $black;
+  background-color: $black;
   width: 90%;
-  height: 100%;
+  height: calc(100vh - 4px);
   overflow: scroll;
+
+  transform: translateX(100%);
+  transition: .3s ease-out;
 
   #about-dcom {
     padding: 0 $spacer1 $spacer1 $spacer1;
@@ -378,4 +383,15 @@ option {
   .aboutPage {
     width: 90%;
   }
+}
+
+#panel-darken {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.4);
+  transform: translateX(100%);
 }

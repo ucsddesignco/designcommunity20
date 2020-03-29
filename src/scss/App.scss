@@ -134,9 +134,12 @@ html {
   @media screen and (max-width: $md) {
     .leftSide {
       #menuContents {
+        z-index: 99999;
         display: none;
-        height: 80vh;
+        height: 90vh;
         margin-top: $spacer3;
+        background: $black;
+        width: 100%;
       }
 
       width: 100%;
@@ -338,7 +341,7 @@ option {
   overflow: scroll;
 
   transform: translateX(100%);
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
 
   #about-dcom {
     padding: 0 $spacer1 $spacer1 $spacer1;
@@ -396,6 +399,6 @@ option {
   right: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   transform: translateX(100%);
 }

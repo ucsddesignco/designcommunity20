@@ -136,7 +136,8 @@ html {
         display: none;
         margin-top: $spacer3;
         background: $black;
-        width: calc(100% - 6.4rem);
+        width: calc(100% - 7rem);
+        left: calc(3.6rem - 1px);
       }
 
       p {

@@ -47,7 +47,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-
     window.addEventListener("resize", this.handleResize);
   }
 
@@ -118,8 +117,8 @@ class App extends React.Component {
         </div>
 
         <div id="menuContents">
-          <button type="button" id="nominateBtn" onClick={this.handleDisagree}>
-            NOMINATE
+          <button type="button" id="nominateBtn">
+            <a href="https://forms.gle/2Ni3UCwx6ZSTgH9y7">NOMINATE</a>
           </button>
 
           <div id="filter">

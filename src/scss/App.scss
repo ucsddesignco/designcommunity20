@@ -138,6 +138,7 @@ html {
         background: $black;
         width: calc(100% - 7rem);
         left: calc(3.6rem - 1px);
+        padding-right: $spacer2;
       }
 
       p {

@@ -245,9 +245,11 @@ class App extends React.Component {
       document.getElementsByClassName("mainSite")[0].style.display = "flex";
       document.getElementById("menuContents").style.display = "block";
       document.getElementById("menuContents").style.position = "fixed";
+      document.getElementById("memberMap").style.position = "fixed";
     } else {
       document.getElementsByClassName("mainSite")[0].style.display = "none";
       document.getElementById("menuContents").style.display = "none";
+      document.getElementById("memberMap").style.position = "static";
     }
 
     let val = !this.state.menuOpen;

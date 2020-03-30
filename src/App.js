@@ -52,7 +52,6 @@ class App extends React.Component {
   }
 
   handleResize() {
-    console.log("RESIZING");
     this.setState({
       windowWidth: window.innerWidth
     });
@@ -83,9 +82,12 @@ class App extends React.Component {
     this.setState({
       [name]: value
     });
+
+    this.shuffleArray(this.state.allCommunity)
   }
 
   shuffleArray(array) {
+    console.log("ARRAY TO SHUFFLE");
     var currentIndex = array.length,
       temporaryValue,
       randomIndex;
@@ -238,6 +240,8 @@ class App extends React.Component {
   resetFilters() {
     console.log("RESET FILTERS");
 
+    this.shuffleArray(this.state.allCommunity)
+
     let allBoxes = document.getElementsByTagName("input");
     for (let i = 0; i < allBoxes.length; i++) {
       allBoxes[i].checked = false;
@@ -281,8 +285,12 @@ class App extends React.Component {
   }
 
   allMemberMap() {
-    let mapArray = this.shuffleArray(this.state.allCommunity);
-    return mapArray.map(member => {
+    let memberMap = this.state.allCommunity;
+    if (this.state.numFilters > 0) {
+      memberMap = this.shuffleArray(memberMap);
+    }
+
+    return memberMap.map(member => {
       if (this.state.numFilters > 0) {
         if (
           (this.state.UXDesigner && member.tags.includes("UXDesigner")) ||

@@ -330,50 +330,56 @@ option {
 * ABOUT COMPONENT
 */
 .aboutPage {
+  box-sizing: border-box;
+  padding: $spacer2;
   border: 2px solid $white;
   margin-top: -$spacer2;
   position: fixed;
   right: 0;
   z-index: 1000;
   background-color: $black;
-  width: 90%;
-  height: calc(100vh - 4px);
+  width: 50%;
+  height: 100vh;
   overflow: scroll;
-
   transform: translateX(100%);
   transition: 0.3s ease-out;
 
+  @media screen and (max-width: $xl) and (min-width: $lg) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: $lg) and (min-width: $md) {
+    width: 70%;
+  }
+
   #about-dcom {
-    padding: 0 $spacer1 $spacer1 $spacer1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacer2;
 
     #closeButton {
       height: 2rem;
       width: 2rem;
-      padding-top: $spacer2;
-      float: right;
+      height: inherit;
     }
 
     #closeButton:hover {
       cursor: pointer;
     }
-
-    h1 {
-      float: left;
-    }
   }
 
-  h1 {
-    margin: $spacer1;
-  }
-
-  img {
-    width: 90%;
-    margin-right: $spacer2;
+  #aboutImg {
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* safari6.0 - 9.0  */
+    filter: grayscale(100%);
+    height: 35vh;
+    object-fit: cover;
   }
 
   #about-body-text {
-    margin: $spacer2;
-    border: none;
+    h5 {
+      margin-top: $spacer2;
+    }
 
     a {
       vertical-align: inherit;
@@ -383,6 +389,12 @@ option {
     a:hover {
       text-decoration: none;
     }
+
+    // @media screen and (max-width: $xl) and (min-width: $md) {
+    //   h5 {
+    //     font-size: 1.6rem;
+    //   }
+    // }
   }
 }
 

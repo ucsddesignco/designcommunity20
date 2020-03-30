@@ -106,9 +106,9 @@ class App extends React.Component {
               className="hamburger"
               isOpen={this.state.menuOpen}
               menuClicked={this.handleMenuOpen.bind(this)}
-              width={30}
-              height={16}
-              strokeWidth={2}
+              width={28}
+              height={17}
+              strokeWidth={3}
               rotate={0}
               color="white"
               borderRadius={0}

@@ -74,21 +74,18 @@ html {
     }
     a {
       text-decoration: none;
-      position: relative;
       margin-left: $spacer2;
-      cursor: pointer;
 
-      div {
+      span {
         display: flex;
-
         h3 {
           line-height: 1.1;
           margin: 0;
         }
+      }
 
-        &:hover {
-          opacity: 0.5;
-        }
+      &:hover{
+        opacity: 0.5;
       }
     }
 
@@ -97,8 +94,9 @@ html {
         font-size: 1.7vw;
       }
 
-      a div svg {
-        width: 2.2vw !important;
+      img{
+        padding-top: 4px;
+        height: 1.7vw;
       }
     }
   }

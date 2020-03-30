@@ -245,6 +245,7 @@ class App extends React.Component {
     if (this.state.menuOpen === false) {
       document.getElementsByClassName("mainSite")[0].style.display = "flex";
       document.getElementById("menuContents").style.display = "block";
+      document.getElementById("menuContents").style.position = "fixed";
     } else {
       document.getElementsByClassName("mainSite")[0].style.display = "none";
       document.getElementById("menuContents").style.display = "none";
@@ -283,7 +284,7 @@ class App extends React.Component {
         }
       } else {
         return (
-          <Col xs={10} sm={5} lg={4}>
+          <Col xs={10} sm={5} md={5} lg={4}>
             <Member
               image={member.image}
               name={member.name}

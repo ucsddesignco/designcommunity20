@@ -44,6 +44,7 @@ class App extends React.Component {
     this.handleMenuOpen = this.handleMenuOpen.bind(this);
     this.leftSideMenu = this.leftSideMenu.bind(this);
     this.handleResize = this.handleResize.bind(this);
+    this.shuffleArray = this.shuffleArray.bind(this);
   }
 
   componentDidMount() {
@@ -83,6 +84,27 @@ class App extends React.Component {
       [name]: value
     });
   }
+
+  shuffleArray(array) {
+    var currentIndex = array.length,
+      temporaryValue,
+      randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+
   aboutState() {
     let val = !this.state.aboutButton;
     console.log(this.state.aboutButton);
@@ -259,7 +281,8 @@ class App extends React.Component {
   }
 
   allMemberMap() {
-    return this.state.allCommunity.map(member => {
+    let mapArray = this.shuffleArray(this.state.allCommunity);
+    return mapArray.map(member => {
       if (this.state.numFilters > 0) {
         if (
           (this.state.UXDesigner && member.tags.includes("UXDesigner")) ||

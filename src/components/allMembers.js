@@ -211,11 +211,4 @@ const allMembers = [
   }
 ];
 
-for (let i = allMembers.length - 1; i > 0; i--) {
-  const j = Math.floor(Math.random() * i);
-  const temp = allMembers[i];
-  allMembers[i] = allMembers[j];
-  allMembers[j] = temp;
-}
-
-export default allMembers;
+export default allMembers

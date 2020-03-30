@@ -89,7 +89,7 @@ html {
       }
     }
 
-    @media screen and (max-width: $bottom-break) and (min-width: $md) {
+    @media screen and (max-width: $bottom-break) and (min-width: $md-end) {
       h3 {
         font-size: 1.7vw;
       }
@@ -97,6 +97,13 @@ html {
       img{
         padding-top: 4px;
         height: 1.7vw;
+      }
+    }
+
+    @media screen and (max-width: $md){
+      img{
+        padding-top: 0.2rem;
+        height: 2.6rem;
       }
     }
   }

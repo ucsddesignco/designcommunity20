@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4581ddc.chunk.css",
+    "main.js": "/static/js/main.0b5955cc.chunk.js",
+    "main.js.map": "/static/js/main.0b5955cc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fe015084.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fe015084.js.map",
+    "static/js/2.ed6bacfe.chunk.js": "/static/js/2.ed6bacfe.chunk.js",
+    "static/js/2.ed6bacfe.chunk.js.map": "/static/js/2.ed6bacfe.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.baa396ffddc23797caa0d1b559de15a5.js": "/precache-manifest.baa396ffddc23797caa0d1b559de15a5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d4581ddc.chunk.css.map": "/static/css/main.d4581ddc.chunk.css.map",
+    "static/js/2.ed6bacfe.chunk.js.LICENSE.txt": "/static/js/2.ed6bacfe.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/NeuePlak-ExtendedBold.4b36649a.woff2",
+    "static/media/Union.svg": "/static/media/Union.c01f89da.svg",
+    "static/media/aboutImg.jpg": "/static/media/aboutImg.87b729bf.jpg",
+    "static/media/amyan.png": "/static/media/amyan.536703c9.png",
+    "static/media/andrew.png": "/static/media/andrew.20836083.png",
+    "static/media/dana.png": "/static/media/dana.9a599d13.png",
+    "static/media/daniel.png": "/static/media/daniel.9ef66b5d.png",
+    "static/media/designCommunity.svg": "/static/media/designCommunity.6938bb13.svg",
+    "static/media/globeVector.svg": "/static/media/globeVector.ab7be0e1.svg",
+    "static/media/icon.svg": "/static/media/icon.4a66ef0e.svg",
+    "static/media/in.svg": "/static/media/in.640d85dd.svg",
+    "static/media/julia.png": "/static/media/julia.c69df388.png",
+    "static/media/lucy.png": "/static/media/lucy.bc2b28d2.png",
+    "static/media/paridhi.png": "/static/media/paridhi.437d3dc5.png",
+    "static/media/quinn.png": "/static/media/quinn.68acf26f.png",
+    "static/media/stella.png": "/static/media/stella.812de56a.png",
+    "static/media/syedadam.png": "/static/media/syedadam.21de45b7.png",
+    "static/media/vicky.png": "/static/media/vicky.2f87cd9e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe015084.js",
+    "static/js/2.ed6bacfe.chunk.js",
+    "static/css/main.d4581ddc.chunk.css",
+    "static/js/main.0b5955cc.chunk.js"
+  ]
+}

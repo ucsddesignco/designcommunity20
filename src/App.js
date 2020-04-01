@@ -48,6 +48,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    let aboutHeight = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--aboutHeight',`${aboutHeight}px`);
     window.addEventListener("resize", this.handleResize);
   }
 
@@ -59,6 +61,8 @@ class App extends React.Component {
     if (this.state.windowWidth > 767) {
       document.getElementsByClassName("mainSite")[0].style.display = "flex";
       document.getElementById("menuContents").style.display = "block";
+      document.getElementById("menuContents").style.position = "static";
+      document.getElementById("memberMap").style.position = "static";
       this.setState({
         menuOpen: false
       });
@@ -66,6 +70,9 @@ class App extends React.Component {
       document.getElementsByClassName("mainSite")[0].style.display = "none";
       document.getElementById("menuContents").style.display = "none";
     }
+
+    let aboutHeight = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--aboutHeight',`${aboutHeight}px`);
   }
 
   handleChange(event) {
@@ -83,7 +90,7 @@ class App extends React.Component {
       [name]: value
     });
 
-    this.shuffleArray(this.state.allCommunity)
+    this.shuffleArray(this.state.allCommunity);
   }
 
   shuffleArray(array) {
@@ -260,7 +267,6 @@ class App extends React.Component {
   }
 
   aboutCallback() {
-    console.log("ABOUT CALLBACK");
     this.setState({
       aboutButton: false
     });
@@ -275,6 +281,7 @@ class App extends React.Component {
     } else {
       document.getElementsByClassName("mainSite")[0].style.display = "none";
       document.getElementById("menuContents").style.display = "none";
+      document.getElementById("menuContents").style.position = "relative";
       document.getElementById("memberMap").style.position = "static";
     }
 
@@ -331,7 +338,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("RENVER AGAING");
     return (
       <div className="container">
         <About parentCallback={this.aboutCallback} />

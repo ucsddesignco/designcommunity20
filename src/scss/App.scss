@@ -342,6 +342,7 @@ option {
   background-color: $black;
   width: 50%;
   height: 100vh;
+  height: calc(var(--aboutHeight, 1vh) * 100);
   overflow: scroll;
   transform: translateX(100%);
   transition: 0.3s ease-out;
@@ -391,12 +392,6 @@ option {
     a:hover {
       text-decoration: none;
     }
-
-    // @media screen and (max-width: $xl) and (min-width: $md) {
-    //   h5 {
-    //     font-size: 1.6rem;
-    //   }
-    // }
   }
 }
 

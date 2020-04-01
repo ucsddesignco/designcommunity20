@@ -28,6 +28,9 @@ class About extends React.Component {
       aboutPage.style.transform = darkPanel.style.transform = "translateX(0%)";
     }
 
+    // Reset panel scroll position to the top
+    aboutPage.scrollTop = 0;
+
     this.handleScroll();
   }
 

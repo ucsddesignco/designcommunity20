@@ -1,214 +1,109 @@
+/*
+JSON TEMPLATE
+
+  {
+    image: "vicky",
+    name: "",
+    year: "",
+    portfolio: "",
+    linkedin: "",
+    tags: [""]
+  },
+*/
+
 const allMembers = [
   {
-    image: "vicky",
-    name: "Vicky Ly",
-    year: "2020",
-    portfolio: "vickyly.co",
-    linkedin: "/in/",
-    tags: ["UXDesigner", "UXEngineer"]
+    image: "julia",
+    name: "Julia Nguyen",
+    year: "2021",
+    portfolio: "julianguyen.co",
+    linkedin: "/in/nguyenjuliaa",
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "GraphicDesigner"]
   },
   {
     image: "lucy",
     name: "Lucy Xu",
     year: "2020",
     portfolio: "lucylouxu.com/",
-    linkedin: "/in/",
-    tags: ["UXDesigner", "UXEngineer"]
+    linkedin: "/in/lucylouxu/",
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "GraphicDesigner"]
   },
-  {
-    image: "brittany",
-    name: "Brittany Newton",
-    year: "2020",
-    portfolio: "in/brittany-newton-648452133/",
-    linkedin: "in/brittany-newton-648452133/",
-    tags: ["UXDesigner", "UXEngineer", "ProdDesigner"]
-  },
-  {
-    image: "steven",
-    name: "Steven Chen",
-    year: "2020",
-    portfolio: "stevenychen.com/",
-    linkedin: "/in/",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "jamin",
-    name: "Jamin Capulong",
-    year: "2020",
-    portfolio: "/in/jamin-nick-capulong/",
-    linkedin: "/in/jamin-nick-capulong/",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "andrew",
-    name: "Andrew Zhen",
-    year: "2020",
-    portfolio: "ajzhen.com",
-    linkedin: "ajzhen.com",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "stella",
-    name: "Stella Seki",
-    year: "2021",
-    portfolio: "/in/stella-seki-043051170/",
-    linkedin: "/in/stella-seki-043051170/",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "nhu",
-    name: "Nhu Luong",
-    year: "2021",
-    portfolio: "nhu777.net",
-    linkedin: "/in/",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "julia",
-    name: "Julia Nguyen",
-    linkedin: "/in/",
-    portfolio: " nguyenjuliaa.com/",
-    year: 2021,
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "paridhi",
-    name: "Rosalinda Montoya Fiore",
-    linkedin: "/in/",
-    portfolio: "in/paridhi4699/",
-    year: 2021,
-    tags: ["VisDesigner", "UXEngineer"]
-  },
-  {
-    image: "alison",
-    name: "Alison Chen",
-    linkedin: "/in/",
-    portfolio: "in/ealisonchen/",
-    year: 2021,
-    tags: ["ProdDesigner"]
-  },
-
   {
     image: "quinn",
     name: "Quinn Vu",
-    linkedin: "/in/",
-    portfolio: "thyvu.site/",
-    year: 2021,
-    tags: ["UXDesigner", "UXEngineer"]
+    year: "2021",
+    portfolio: "quinn-vu.com",
+    linkedin: "/in/thyvu1014/",
+    tags: ["VisualDesigner", "GraphicDesigner"]
   },
   {
-    image: "winson",
-    name: "Winson Dieu",
-    linkedin: "/in/",
-    portfolio: "winsondieu.com",
-    year: 2021,
-    tags: ["ProdDesigner"]
+    image: "dana",
+    name: "Dana Chou",
+    year: "2021",
+    portfolio: "danachou.net/flynyon",
+    linkedin: "/in/dana-chou/",
+    tags: ["ProductDesigner"]
   },
   {
     image: "vicky",
     name: "Vicky Ly",
     year: "2020",
-    portfolio: "vickyly.co",
-    linkedin: "/in/",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "lucy",
-    name: "Lucy Xu",
-    year: "2020",
-    portfolio: "lucylouxu.com/",
-    linkedin: "/in/",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "brittany",
-    name: "Brittany Newton",
-    year: "2020",
-    portfolio: "in/brittany-newton-648452133/",
-    linkedin: "in/brittany-newton-648452133/",
-    tags: ["UXDesigner", "UXEngineer", "ProdDesigner"]
-  },
-  {
-    image: "steven",
-    name: "Steven Chen",
-    year: "2020",
-    portfolio: "stevenychen.com/",
-    linkedin: "/in/",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "jamin",
-    name: "Jamin Capulong",
-    year: "2020",
-    portfolio: "/in/jamin-nick-capulong/",
-    linkedin: "/in/jamin-nick-capulong/",
-    tags: ["UXDesigner", "UXEngineer"]
+    portfolio: "vickyly.co/",
+    linkedin: "/in/vicky-ly/",
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner"]
   },
   {
     image: "andrew",
     name: "Andrew Zhen",
     year: "2020",
-    portfolio: "ajzhen.com",
-    linkedin: "ajzhen.com",
-    tags: ["UXDesigner", "UXEngineer"]
+    portfolio: "ajzhen.com/",
+    linkedin: "/in/andrew-zhen/",
+    tags: ["UXEnginner"]
+  },
+  {
+    image: "daniel",
+    name: "Daniel Li",
+    year: "2021",
+    portfolio: "lidaniel.com",
+    linkedin: "/in/lidaniel99/",
+    tags: ["ContentStrategist"]
+  },
+  {
+    image: "syedadam",
+    name: "Syed Adam Emir Putra",
+    year: "2022",
+    portfolio: "syedadam007.github.io/",
+    linkedin: "/in/syedadamemirputra/",
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "EXResearcher"]
   },
   {
     image: "stella",
     name: "Stella Seki",
     year: "2021",
-    portfolio: "/in/stella-seki-043051170/",
-    linkedin: "/in/stella-seki-043051170/",
-    tags: ["UXDesigner", "UXEngineer"]
+    portfolio: "stellaseki.com",
+    linkedin: "/in/stella-seki",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXResearcher",
+      "GraphicDesigner"
+    ]
   },
   {
-    image: "nhu",
-    name: "Nhu Luong",
+    image: "amyan",
+    name: "Amy Am",
     year: "2021",
-    portfolio: "nhu777.net",
-    linkedin: "/in/",
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "julia",
-    name: "Julia Nguyen",
-    linkedin: "/in/",
-    portfolio: " nguyenjuliaa.com/",
-    year: 2021,
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "paridhi",
-    name: "Rosalinda Montoya Fiore",
-    linkedin: "/in/",
-    portfolio: "in/paridhi4699/",
-    year: 2021,
-    tags: ["VisDesigner", "UXEngineer"]
-  },
-  {
-    image: "alison",
-    name: "Alison Chen",
-    linkedin: "/in/",
-    portfolio: "in/ealisonchen/",
-    year: 2021,
-    tags: ["ProdDesigner"]
-  },
-
-  {
-    image: "quinn",
-    name: "Quinn Vu",
-    linkedin: "/in/",
-    portfolio: "thyvu.site/",
-    year: 2021,
-    tags: ["UXDesigner", "UXEngineer"]
-  },
-  {
-    image: "winson",
-    name: "Winson Dieu",
-    linkedin: "/in/",
-    portfolio: "winsondieu.com",
-    year: 2021,
-    tags: ["ProdDesigner"]
+    portfolio: "amyan.me",
+    linkedin: "/in/amy-zhong-an",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXResearcher",
+      "GraphicDesigner"
+    ]
   }
 ];
 
-export default allMembers
+export default allMembers;

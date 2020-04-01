@@ -24,12 +24,12 @@ class App extends React.Component {
     this.state = {
       numFilters: 0,
       UXDesigner: false,
-      VisDesigner: false,
-      ProdDesigner: false,
+      VisualDesigner: false,
+      ProductDesigner: false,
       ContentStrategist: false,
       UXResearcher: false,
       UXEngineer: false,
-      Graphic: false,
+      GraphicDesigner: false,
       allCommunity: allMembers,
       aboutButton: false,
       menuOpen: false,
@@ -171,24 +171,24 @@ class App extends React.Component {
           </label>
           <input
             className="styled-checkbox checkbox"
-            id="VisDesigner"
+            id="VisualDesigner"
             type="checkbox"
-            name="VisDesigner"
-            value="VisDesigner"
+            name="VisualDesigner"
+            value="VisualDesigner"
             onChange={this.handleChange}
           />
-          <label for="VisDesigner">
+          <label for="VisualDesigner">
             <p>VISUAL DESIGNER</p>
           </label>
           <input
             className="styled-checkbox checkbox"
-            id="ProdDesigner"
+            id="ProductDesigner"
             type="checkbox"
-            name="ProdDesigner"
-            value="ProdDesigner"
+            name="ProductDesigner"
+            value="ProductDesigner"
             onChange={this.handleChange}
           />
-          <label for="ProdDesigner">
+          <label for="ProductDesigner">
             <p>PRODUCT DESIGNER</p>
           </label>
           <input
@@ -227,13 +227,13 @@ class App extends React.Component {
 
           <input
             className="styled-checkbox checkbox"
-            id="Graphic"
+            id="GraphicDesigner"
             type="checkbox"
-            name="Graphic"
-            value="Graphic"
+            name="GraphicDesigner"
+            value="GraphicDesigner"
             onChange={this.handleChange}
           />
-          <label for="Graphic">
+          <label for="GraphicDesigner">
             <p>GRAPHIC DESIGNER</p>
           </label>
         </div>
@@ -251,12 +251,12 @@ class App extends React.Component {
 
     this.setState({
       UXDesigner: false,
-      VisDesigner: false,
-      ProdDesigner: false,
+      VisualDesigner: false,
+      ProductDesigner: false,
       ContentStrategist: false,
       UXResearcher: false,
       UXEngineer: false,
-      Graphic: false,
+      GraphicDesigner: false,
       numFilters: 0
     });
   }
@@ -292,12 +292,12 @@ class App extends React.Component {
       if (this.state.numFilters > 0) {
         if (
           (this.state.UXDesigner && member.tags.includes("UXDesigner")) ||
-          (this.state.VisDesigner && member.tags.includes("VisDesigner")) ||
-          (this.state.ProdDesigner && member.tags.includes("ProdDesigner")) ||
+          (this.state.VisualDesigner && member.tags.includes("VisualDesigner")) ||
+          (this.state.ProductDesigner && member.tags.includes("ProductDesigner")) ||
           (this.state.ContentStrategist && member.tags.includes("ContentStrategist")) ||
           (this.state.UXResearcher && member.tags.includes("UXResearcher")) ||
           (this.state.UXEngineer && member.tags.includes("UXEngineer")) ||
-          (this.state.Graphic && member.tags.includes("Graphic"))
+          (this.state.GraphicDesigner && member.tags.includes("GraphicDesigner"))
         ) {
           return (
             <Col xs={10} sm={10} md={5} lg={4}>

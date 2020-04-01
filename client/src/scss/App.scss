@@ -27,13 +27,13 @@ html {
     vertical-align: text-top;
     width: 16px;
     height: 16px;
-    background: black;
+    background: $black;
     border: 1px solid white;
   }
 
   // Box checked
   &:checked + label:before {
-    background: black;
+    background: $black;
   }
 
   // Checkmark. Could be replaced with an image
@@ -42,7 +42,7 @@ html {
     position: absolute;
     left: 5px;
     top: 5px;
-    background: white;
+    background: $white;
     width: 8px;
     height: 8px;
   }
@@ -53,8 +53,27 @@ html {
   font-size: 10px;
 
   #nominateBtn {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     width: 100%;
+    font-size: 1.2rem !important;
+    height: 5rem;
+    border-radius: 0;
+    border: 2px solid $white;
+    background-color: $black;
+    margin-top: $spacer2;
+
+    &:hover {
+      opacity: 0.8;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: $md) {
+      height: $spacer3;
+      margin: $spacer1 0;
+    }
   }
 
   .mainSite {
@@ -72,6 +91,7 @@ html {
         opacity: 0.5;
       }
     }
+
     a {
       text-decoration: none;
       margin-left: $spacer2;
@@ -84,7 +104,7 @@ html {
         }
       }
 
-      &:hover{
+      &:hover {
         opacity: 0.5;
       }
     }
@@ -94,16 +114,19 @@ html {
         font-size: 1.7vw;
       }
 
-      img{
+      img {
         padding-top: 4px;
         height: 1.7vw;
       }
     }
 
     @media screen and (max-width: $md){
-      img{
-        padding-top: 0.2rem;
-        height: 2.6rem;
+      img {
+        height: 3.4rem;
+      }
+
+      h3, a span h3 {
+        font-size: 2.6rem;
       }
     }
   }
@@ -185,11 +208,6 @@ html {
         }
       }
 
-      #nominateBtn {
-        font-size: 14px;
-        height: $spacer3;
-      }
-
       .mainSite {
         bottom: 0;
       }
@@ -228,14 +246,16 @@ html {
     br {
       clear: both;
     }
-  }
-  button {
-    width: 95%;
-    border-radius: 0%;
-    border: 2px solid $white;
-    height: 5rem;
-    background-color: $black;
-    margin-top: $spacer2;
+
+    @media only screen and (max-width: $md) {
+      h3 {
+        font-size: 2.6rem;
+      }
+
+      h5 {
+        font-size: 2.3rem;
+      }
+    }
   }
 
   label {
@@ -299,7 +319,7 @@ option {
 .confirmBox {
   position: fixed;
 
-  border: 2px solid white;
+  border: 2px solid $white;
   background-color: $black;
   z-index: 99999;
 
@@ -372,7 +392,7 @@ option {
   #about-dcom {
     display: flex;
     justify-content: space-between;
-    margin-bottom: $spacer2;
+    margin-bottom: $spacer2-3;
 
     #closeButton {
       height: 2rem;
@@ -382,6 +402,10 @@ option {
 
     #closeButton:hover {
       cursor: pointer;
+    }
+
+    h1 {
+      line-height: 2.8rem;
     }
   }
 

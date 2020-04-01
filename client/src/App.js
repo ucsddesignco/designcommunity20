@@ -145,9 +145,9 @@ class App extends React.Component {
               className="hamburger"
               isOpen={this.state.menuOpen}
               menuClicked={this.handleMenuOpen.bind(this)}
-              width={28}
-              height={17}
-              strokeWidth={3}
+              width={20}
+              height={15}
+              strokeWidth={2}
               rotate={0}
               color="white"
               borderRadius={0}
@@ -157,9 +157,15 @@ class App extends React.Component {
         </div>
 
         <div id="menuContents">
-          <button type="button" id="nominateBtn">
-            <a href="https://forms.gle/2Ni3UCwx6ZSTgH9y7">NOMINATE</a>
-          </button>
+          <a 
+            id="nominateBtn" 
+            // href="https://forms.gle/2Ni3UCwx6ZSTgH9y7"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfAyZkek2lK5m9qCjx8-PTCTsbN0hF7Qn4JCnLji7y7fSopZg/viewform"
+          >
+            <p>
+              NOMINATE
+            </p>
+          </a>
 
           <div id="filter">
             <h3>Filters</h3>

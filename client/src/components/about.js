@@ -125,32 +125,6 @@ class About extends React.Component {
               interests, come join our community and be apart of something bigger!
             </h5>
           </div>
-          {/* <Row justify="center" align="center">
-            <Col xs={20} md={12} lg={10} xl={10}>
-              {" "}
-              <div id="about-body-text">
-                <h4>
-                  Connecting you with your community!
-                </h4>
-                <h4>
-                  Inspired by{" "}
-                  <a href="https://blackswho.design/">Blacks Who Design</a> and{" "}
-                  <a href="https://womenwho.design/">Women Who Design</a>,{" "} our page
-                  is an online directory aimed to connect UCSD student designers and
-                  alumni with each other. Our goal is to cultivate a vibrant
-                  community where people can share their work, build new
-                  relationships, look for mentors, and much more. This community
-                  page isn’t just for Design Co members, but for all student
-                  designers at UCSD, from first-years to alumni. So, if you’re a
-                  fellow designer looking to meet people who share your interests,
-                  come join our community and be apart of something bigger!
-                </h4>
-              </div>
-            </Col>
-            <Col xs={20} md={20} lg={10} xl={10}>
-              <img src={require("../images/aboutImg.jpg")} alt="Community" />
-            </Col>
-          </Row> */}
         </div>
       </div>
     );

@@ -100,7 +100,7 @@ const allMembers = [
   },
   {
     image: "amyan",
-    name: "Amy Am",
+    name: "Amy An",
     year: "2021",
     portfolio: "amyan.me",
     linkedin: "/in/amy-zhong-an",

@@ -287,12 +287,8 @@ class App extends React.Component {
   }
 
   allMemberMap() {
-    let memberMap = this.state.allCommunity;
-    if (this.state.numFilters > 0) {
-      memberMap = this.shuffleArray(memberMap);
-    }
 
-    return memberMap.map(member => {
+    return this.state.allCommunity.map(member => {
       if (this.state.numFilters > 0) {
         if (
           (this.state.UXDesigner && member.tags.includes("UXDesigner")) ||

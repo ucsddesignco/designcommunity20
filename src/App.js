@@ -76,7 +76,6 @@ class App extends React.Component {
   }
 
   handleChange(event) {
-    console.log(event.target.name);
     const name = event.target.name;
     let value = event.target.checked;
 
@@ -94,7 +93,6 @@ class App extends React.Component {
   }
 
   shuffleArray(array) {
-    console.log("ARRAY TO SHUFFLE");
     var currentIndex = array.length,
       temporaryValue,
       randomIndex;
@@ -116,7 +114,6 @@ class App extends React.Component {
 
   aboutState() {
     let val = !this.state.aboutButton;
-    console.log(this.state.aboutButton);
     this.setState({
       aboutButton: val
     });
@@ -245,8 +242,6 @@ class App extends React.Component {
   }
 
   resetFilters() {
-    console.log("RESET FILTERS");
-
     this.shuffleArray(this.state.allCommunity)
 
     let allBoxes = document.getElementsByTagName("input");
@@ -303,8 +298,7 @@ class App extends React.Component {
           (this.state.UXDesigner && member.tags.includes("UXDesigner")) ||
           (this.state.VisDesigner && member.tags.includes("VisDesigner")) ||
           (this.state.ProdDesigner && member.tags.includes("ProdDesigner")) ||
-          (this.state.ContentStrategist &&
-            member.tags.includes("ContentStrategist")) ||
+          (this.state.ContentStrategist && member.tags.includes("ContentStrategist")) ||
           (this.state.UXResearcher && member.tags.includes("UXResearcher")) ||
           (this.state.UXEngineer && member.tags.includes("UXEngineer")) ||
           (this.state.Graphic && member.tags.includes("Graphic"))
@@ -337,6 +331,14 @@ class App extends React.Component {
     });
   }
 
+  componentDidUpdate() {
+    if (document.getElementById("memberMap").children.length == 0) {
+      document.getElementById("noResults").style.display = "flex";
+    } else {
+      document.getElementById("noResults").style.display = "none";
+    }
+  }
+
   render() {
     return (
       <div className="container">
@@ -350,6 +352,11 @@ class App extends React.Component {
 
           <Col xs={20} sm={20} md={15}>
             <Row id="memberMap">{this.allMemberMap()}</Row>
+            <div id="noResults">
+              <h5>
+                Sorry there's nothing here!
+              </h5>
+            </div>
           </Col>
         </Row>
       </div>

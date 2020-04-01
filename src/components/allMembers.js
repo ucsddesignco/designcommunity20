@@ -58,7 +58,7 @@ const allMembers = [
     year: "2020",
     portfolio: "ajzhen.com/",
     linkedin: "/in/andrew-zhen/",
-    tags: ["UXEnginner"]
+    tags: ["UXEngineer"]
   },
   {
     image: "daniel",
@@ -89,6 +89,14 @@ const allMembers = [
       "UXResearcher",
       "GraphicDesigner"
     ]
+  },
+  {
+    image: "paridhi",
+    name: "Paridhi Khaitan",
+    year: "2021",
+    portfolio: "paridhikhaitan.me",
+    linkedin: "/in/paridhikhaitan/",
+    tags: ["UXEngineer"]
   },
   {
     image: "amyan",

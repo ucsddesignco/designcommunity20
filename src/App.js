@@ -4,7 +4,7 @@ import Member from "./components/member";
 import allMembers from "./components/allMembers.js";
 import HamburgerMenu from "react-hamburger-menu";
 import { StickyContainer, Sticky } from "react-sticky";
-
+import ReactGA from "react-ga";
 import {
   Container,
   Row,
@@ -13,10 +13,11 @@ import {
   Hidden,
   setConfiguration
 } from "react-grid-system";
-
 import About from "./components/about";
 
 setConfiguration({ gridColumns: 20 });
+
+const trackingId = "UA-162464807-1";
 
 class App extends React.Component {
   constructor(props) {
@@ -49,8 +50,16 @@ class App extends React.Component {
 
   componentDidMount() {
     let aboutHeight = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--aboutHeight',`${aboutHeight}px`);
+    document.documentElement.style.setProperty(
+      "--aboutHeight",
+      `${aboutHeight}px`
+    );
     window.addEventListener("resize", this.handleResize);
+    ReactGA.initialize(trackingId);
+  }
+
+  componentWillMount(){
+    this.shuffleArray(this.state.allCommunity)
   }
 
   handleResize() {
@@ -72,7 +81,10 @@ class App extends React.Component {
     }
 
     let aboutHeight = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--aboutHeight',`${aboutHeight}px`);
+    document.documentElement.style.setProperty(
+      "--aboutHeight",
+      `${aboutHeight}px`
+    );
   }
 
   handleChange(event) {
@@ -242,7 +254,7 @@ class App extends React.Component {
   }
 
   resetFilters() {
-    this.shuffleArray(this.state.allCommunity)
+    this.shuffleArray(this.state.allCommunity);
 
     let allBoxes = document.getElementsByTagName("input");
     for (let i = 0; i < allBoxes.length; i++) {
@@ -287,17 +299,20 @@ class App extends React.Component {
   }
 
   allMemberMap() {
-
     return this.state.allCommunity.map(member => {
       if (this.state.numFilters > 0) {
         if (
           (this.state.UXDesigner && member.tags.includes("UXDesigner")) ||
-          (this.state.VisualDesigner && member.tags.includes("VisualDesigner")) ||
-          (this.state.ProductDesigner && member.tags.includes("ProductDesigner")) ||
-          (this.state.ContentStrategist && member.tags.includes("ContentStrategist")) ||
+          (this.state.VisualDesigner &&
+            member.tags.includes("VisualDesigner")) ||
+          (this.state.ProductDesigner &&
+            member.tags.includes("ProductDesigner")) ||
+          (this.state.ContentStrategist &&
+            member.tags.includes("ContentStrategist")) ||
           (this.state.UXResearcher && member.tags.includes("UXResearcher")) ||
           (this.state.UXEngineer && member.tags.includes("UXEngineer")) ||
-          (this.state.GraphicDesigner && member.tags.includes("GraphicDesigner"))
+          (this.state.GraphicDesigner &&
+            member.tags.includes("GraphicDesigner"))
         ) {
           return (
             <Col xs={10} sm={10} md={5} lg={4}>
@@ -349,9 +364,7 @@ class App extends React.Component {
           <Col xs={20} sm={20} md={15}>
             <Row id="memberMap">{this.allMemberMap()}</Row>
             <div id="noResults">
-              <h5>
-                Sorry there's nothing here!
-              </h5>
+              <h5>Sorry there's nothing here!</h5>
             </div>
           </Col>
         </Row>

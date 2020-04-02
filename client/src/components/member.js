@@ -5,7 +5,7 @@ import { prototype } from "events";
 class Member extends React.Component {
   render() {
     const linkedinURL = `https://www.linkedin.com${this.props.linkedin}`;
-    const portfolioURL = `https://www.${this.props.portfolio}`;
+    const portfolioURL = `http://${this.props.portfolio}`;
 
     let portfolio = this.props.portfolio.toUpperCase();
 
@@ -27,7 +27,7 @@ class Member extends React.Component {
           <img src={require("../images/globeVector.svg")}></img>
           <p>
             {" "}
-            <a href={portfolioURL}>{portfolio}</a>
+            <a href= {portfolioURL}>{portfolio}</a>
           </p>
         </div>
         <div className="info">

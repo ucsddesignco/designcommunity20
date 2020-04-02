@@ -48,6 +48,19 @@ const allMembers = [
     ]
   },
   {
+    image: "grace",
+    name: "Grace Gao",
+    year: "2021",
+    portfolio: "gracegao.webflow.io",
+    linkedin: "/in/gaograce1/",
+    tags: [
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXDesigner",
+      "GraphicDesigner"
+    ]
+  },
+  {
     image: "natasha",
     name: "Natasha Supangkat",
     year: "2021",

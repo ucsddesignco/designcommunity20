@@ -72,7 +72,7 @@ const allMembers = [
     image: "syedadam",
     name: "Syed Adam Emir Putra",
     year: "2022",
-    portfolio: "syedadam007.github.io/",
+    portfolio: "https://syedadam007.github.io/",
     linkedin: "/in/syedadamemirputra/",
     tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "EXResearcher"]
   },

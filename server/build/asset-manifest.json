@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.3efe0f56.chunk.css",
-    "main.js": "/static/js/main.dd3452b7.chunk.js",
-    "main.js.map": "/static/js/main.dd3452b7.chunk.js.map",
+    "main.css": "/static/css/main.9f56aef2.chunk.css",
+    "main.js": "/static/js/main.a9e58942.chunk.js",
+    "main.js.map": "/static/js/main.a9e58942.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fe015084.js",
     "runtime-main.js.map": "/static/js/runtime-main.fe015084.js.map",
-    "static/js/2.ed6bacfe.chunk.js": "/static/js/2.ed6bacfe.chunk.js",
-    "static/js/2.ed6bacfe.chunk.js.map": "/static/js/2.ed6bacfe.chunk.js.map",
+    "static/js/2.73c6af76.chunk.js": "/static/js/2.73c6af76.chunk.js",
+    "static/js/2.73c6af76.chunk.js.map": "/static/js/2.73c6af76.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ef433f4cf20b8049f6a33f1509a6a5c4.js": "/precache-manifest.ef433f4cf20b8049f6a33f1509a6a5c4.js",
+    "precache-manifest.db7e49b5df93e5615cdec7ab28e1bf9a.js": "/precache-manifest.db7e49b5df93e5615cdec7ab28e1bf9a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3efe0f56.chunk.css.map": "/static/css/main.3efe0f56.chunk.css.map",
-    "static/js/2.ed6bacfe.chunk.js.LICENSE.txt": "/static/js/2.ed6bacfe.chunk.js.LICENSE.txt",
+    "static/css/main.9f56aef2.chunk.css.map": "/static/css/main.9f56aef2.chunk.css.map",
+    "static/js/2.73c6af76.chunk.js.LICENSE.txt": "/static/js/2.73c6af76.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/NeuePlak-ExtendedBold.4b36649a.woff2",
     "static/media/Union.svg": "/static/media/Union.c01f89da.svg",
     "static/media/aboutImg.jpg": "/static/media/aboutImg.87b729bf.jpg",
     "static/media/amyan.png": "/static/media/amyan.536703c9.png",
     "static/media/andrew.png": "/static/media/andrew.20836083.png",
+    "static/media/brittany.png": "/static/media/brittany.39516292.png",
     "static/media/dana.png": "/static/media/dana.9a599d13.png",
     "static/media/daniel.png": "/static/media/daniel.9ef66b5d.png",
     "static/media/designCommunity.svg": "/static/media/designCommunity.6938bb13.svg",
@@ -33,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fe015084.js",
-    "static/js/2.ed6bacfe.chunk.js",
-    "static/css/main.3efe0f56.chunk.css",
-    "static/js/main.dd3452b7.chunk.js"
+    "static/js/2.73c6af76.chunk.js",
+    "static/css/main.9f56aef2.chunk.css",
+    "static/js/main.a9e58942.chunk.js"
   ]
 }

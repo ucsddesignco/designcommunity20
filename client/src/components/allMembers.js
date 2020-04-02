@@ -21,6 +21,28 @@ const allMembers = [
     tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "GraphicDesigner"]
   },
   {
+    image: "nhu",
+    name: "Nhu Luong",
+    year: "2021",
+    portfolio: "nhu777.net/",
+    linkedin: "/in/nhu-luong777/",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXResearcher",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "brittany",
+    name: "Brittany Newton",
+    year: "2021",
+    portfolio: "brittanynewton.com",
+    linkedin: "/in/brittanynewton88",
+    tags: ["VisualDesigner", "ProductDesigner"]
+  },
+  {
     image: "lucy",
     name: "Lucy Xu",
     year: "2020",

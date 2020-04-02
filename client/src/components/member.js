@@ -20,7 +20,7 @@ class Member extends React.Component {
     // }
     return (
       <div className="memberContainer">
-        <img src={require(`../images/team/${this.props.image}.png`)}></img>
+        <img src={require(`../images/team/${this.props.image}.jpeg`)}></img>
         <p>CLASS OF {this.props.year} </p>
         <h2> {this.props.name} </h2>
         <div className="info">

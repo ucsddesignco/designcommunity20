@@ -21,6 +21,67 @@ const allMembers = [
     tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "GraphicDesigner"]
   },
   {
+    image: "nhu",
+    name: "Nhu Luong",
+    year: "2021",
+    portfolio: "nhu777.net/",
+    linkedin: "/in/nhu-luong777/",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXResearcher",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "emily",
+    name: "Emily Nguyen",
+    year: "2019",
+    portfolio: "emilynguyen.co/",
+    linkedin: "/in/emilymnguyen/",
+    tags: [
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXEngineer",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "grace",
+    name: "Grace Gao",
+    year: "2021",
+    portfolio: "gracegao.webflow.io",
+    linkedin: "/in/gaograce1/",
+    tags: [
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXDesigner",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "natasha",
+    name: "Natasha Supangkat",
+    year: "2021",
+    portfolio: "natashasupangkat.webflow.io/",
+    linkedin: "/in/natasha-supangkat/",
+    tags: [
+      "UXDesinger",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "brittany",
+    name: "Brittany Newton",
+    year: "2021",
+    portfolio: "brittanynewton.com",
+    linkedin: "/in/brittanynewton88",
+    tags: ["VisualDesigner", "ProductDesigner"]
+  },
+  {
     image: "lucy",
     name: "Lucy Xu",
     year: "2020",

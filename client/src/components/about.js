@@ -77,7 +77,7 @@ class About extends React.Component {
         {/* Footer */}
         <Row className="mainSite" style={{ alignItems: "baseline" }}>
           <h3 onClick={this.toggle}>About</h3>
-          <a href="http://www.ucsddesign.co/" target="_blank">
+          <a href="http://www.ucsddesign.co/">
             <span>
               <h3>Main Site</h3>
               <img src={require('../images/Union.svg')} />

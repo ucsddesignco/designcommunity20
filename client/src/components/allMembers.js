@@ -35,6 +35,32 @@ const allMembers = [
     ]
   },
   {
+    image: "emily",
+    name: "Emily Nguyen",
+    year: "2019",
+    portfolio: "emilynguyen.co/",
+    linkedin: "/in/emilymnguyen/",
+    tags: [
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXEngineer",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "natasha",
+    name: "Natasha Supangkat",
+    year: "2021",
+    portfolio: "natashasupangkat.webflow.io/",
+    linkedin: "/in/natasha-supangkat/",
+    tags: [
+      "UXDesinger",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner"
+    ]
+  },
+  {
     image: "brittany",
     name: "Brittany Newton",
     year: "2021",

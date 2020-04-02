@@ -3,7 +3,7 @@ Welcome to Design Community, these are the instructions to making it run
 2. **client** consists of all the React code (where changes are actually to be made)
 3. After changes have been made in **client** run ```npm run build```
 4. A build folder is generated in **client**. Cut and paste the **build** folder to server. 
-5. In the **server** folder: 
+5. The **server** folder consists of express, that will host the buildpack with Heroku. Therefore in the **server** folder: 
 >
 1. ```git add .```
 2. ```git commit -m ""```

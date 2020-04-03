@@ -133,7 +133,7 @@ const allMembers = [
     image: "syedadam",
     name: "Syed Adam Emir Putra",
     year: "2022",
-    portfolio: "https://syedadam007.github.io/",
+    portfolio: "syedadam007.github.io/",
     linkedin: "/in/syedadamemirputra/",
     tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "EXResearcher"]
   },
@@ -170,6 +170,68 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "UXResearcher",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "edngai",
+    name: "Ed Ngai",
+    year: "2017",
+    portfolio: "edngai.com",
+    linkedin: "/in/engai/",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner",
+      "UXEngineer"
+    ]
+  },
+  {
+    image: "neveforesti",
+    name: "Neve Foresti",
+    year: "2021",
+    portfolio: "neveforesti.com",
+    linkedin: "/in/neveforesti/",
+    tags: [
+      "UXDesigner",
+      "UXEngineer"
+    ]
+  },
+  {
+    image: "carlolopez",
+    name: "Carlo Lopez De La Fuente",
+    year: "2020",
+    portfolio: "fdcostheta.cargo.site/",
+    linkedin: "/in/carlolopezdelafuente/",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXResearcher",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "jonathanfunes",
+    name: "Jonathan Funes",
+    year: "2020",
+    portfolio: "funes-design.com",
+    linkedin: "/in/jonathan-funes/",
+    tags: [
+      "VisualDesigner",
+      "GraphicDesigner"
+      // "Illustration"
+    ]
+  },
+  {
+    image: "katherinechen",
+    name: "Katherine Chen",
+    year: "2021",
+    portfolio: "katherineychen.com/",
+    linkedin: "/in/katherineychen/",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
       "GraphicDesigner"
     ]
   }

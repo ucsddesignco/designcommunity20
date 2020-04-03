@@ -260,7 +260,7 @@ class App extends React.Component {
   }
 
   resetFilters() {
-    this.shuffleArray(this.state.allCommunity);
+    // this.shuffleArray(this.state.allCommunity);
 
     let allBoxes = document.getElementsByTagName("input");
     for (let i = 0; i < allBoxes.length; i++) {

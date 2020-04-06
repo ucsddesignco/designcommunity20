@@ -281,6 +281,18 @@ const allMembers = [
       "ProductDesigner",
       "UXResearcher"
     ]
+  },
+  {
+    image: "aidenjauffret",
+    name: "Aiden Jauffret",
+    year: "2022",
+    portfolio: "aidenjauffret.myportfolio.com/",
+    linkedin: "/in/jfret/",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner",
+      "GraphicDesigner"
+    ]
   }
 ];
 

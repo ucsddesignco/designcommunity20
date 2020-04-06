@@ -76,7 +76,7 @@ const allMembers = [
   {
     image: "brittany",
     name: "Brittany Newton",
-    year: "2021",
+    year: "2020",
     portfolio: "brittanynewton.com",
     linkedin: "/in/brittanynewton88",
     tags: ["VisualDesigner", "ProductDesigner"]
@@ -233,6 +233,53 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "GraphicDesigner"
+    ]
+  },
+  {
+    image: "samanthacheung",
+    name: "Samantha Cheung",
+    year: "2022",
+    portfolio: "samanthacheung.design/",
+    linkedin: "/in/cheung-samantha/",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "mengmingluo",
+    name: "Mengming Luo",
+    year: "2023",
+    portfolio: "mengmingluo.com",
+    linkedin: "/in/mengming-luo",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner",
+      "UXEngineer"
+    ]
+  },
+  {
+    image: "joelsequeira",
+    name: "Joel Sequeira",
+    year: "2018",
+    portfolio: "github.com/joelseq",
+    linkedin: "/in/joelseq/",
+    tags: [
+      "UXEngineer"
+    ]
+  },
+  {
+    image: "michellewan",
+    name: "Michelle Wan",
+    year: "2020",
+    portfolio: "misawan.github.io",
+    linkedin: "/in/misawan/",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "UXResearcher"
     ]
   }
 ];

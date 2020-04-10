@@ -131,7 +131,7 @@ const allMembers = [
   },
   {
     image: "syedadam",
-    name: "Syed Adam Emir Putra",
+    name: "Adam Syed",
     year: "2022",
     portfolio: "syedadam007.github.io/",
     linkedin: "/in/syedadamemirputra/",
@@ -292,6 +292,39 @@ const allMembers = [
       "UXDesigner",
       "ProductDesigner",
       "GraphicDesigner"
+    ]
+  },
+  {
+    image: "jaredsuasin",
+    name: "Jared Suasin",
+    year: "2019",
+    portfolio: "jaredsuasin.com/",
+    linkedin: "/in/jaredsuasin/",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner",
+      "UXEngineer"
+    ]
+  },
+  {
+    image: "alicelee",
+    name: "Alice Lee",
+    year: "2021",
+    portfolio: "alicelee.design/",
+    linkedin: "/in/alicelee1998/",
+    tags: [
+      "UXResearcher"
+    ]
+  },
+  {
+    image: "nathanmansur",
+    name: "Nathan Mansur",
+    year: "2019",
+    portfolio: "nathanmansur.com/",
+    linkedin: "/in/nathan-mansur/",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner"
     ]
   }
 ];

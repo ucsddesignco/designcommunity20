@@ -326,6 +326,18 @@ const allMembers = [
       "UXDesigner",
       "ProductDesigner"
     ]
+  },
+  {
+    image: "thalalcassim",
+    name: "Thalal Cassim",
+    year: "2020",
+    portfolio: "thalalcassim.com/",
+    linkedin: "/in/thalalcassim/",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner",
+      "UXResearcher"
+    ]
   }
 ];
 

@@ -58,8 +58,8 @@ class App extends React.Component {
     ReactGA.initialize(trackingId);
   }
 
-  componentWillMount(){
-    this.shuffleArray(this.state.allCommunity)
+  componentWillMount() {
+    this.shuffleArray(this.state.allCommunity);
   }
 
   handleResize() {
@@ -157,19 +157,18 @@ class App extends React.Component {
         </div>
 
         <div id="menuContents">
-          <a 
-            id="nominateBtn" 
-            // href="https://forms.gle/2Ni3UCwx6ZSTgH9y7"
+          <a
+            id="nominateBtn"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfAyZkek2lK5m9qCjx8-PTCTsbN0hF7Qn4JCnLji7y7fSopZg/viewform"
           >
-            <p>
-              NOMINATE
-            </p>
+            <p>NOMINATE</p>
           </a>
 
           <div id="filter">
             <h3>Filters</h3>
-            <h5 onClick={this.resetFilters}>Clear All</h5>
+            <h5 onClick={this.resetFilters} id="clearBtn">
+              Clear All
+            </h5>
             <br />
           </div>
           {
@@ -260,7 +259,10 @@ class App extends React.Component {
   }
 
   resetFilters() {
-    // this.shuffleArray(this.state.allCommunity);
+    console.log(this.state.numFilters);
+    if (this.state.numFilters > 0) {
+      this.shuffleArray(this.state.allCommunity);
+    }
 
     let allBoxes = document.getElementsByTagName("input");
     for (let i = 0; i < allBoxes.length; i++) {

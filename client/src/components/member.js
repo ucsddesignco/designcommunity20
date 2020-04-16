@@ -3,24 +3,27 @@ import "../scss/App.scss";
 import { prototype } from "events";
 
 class Member extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      countPeople : 0
+    }
+
+    this.handlePeopleLoad = this.handlePeopleLoad.bind(this)
+  }
+
+  handlePeopleLoad(){
+  }
+
   render() {
     const linkedinURL = `https://www.linkedin.com${this.props.linkedin}`;
     const portfolioURL = `http://${this.props.portfolio}`;
 
     let portfolio = this.props.portfolio.toUpperCase();
-
-    // if (portfolio.length > 14) {
-    //   portfolio = portfolio.toString().substring(0, 12) + "...";
-    // }
-
     let linkedin = this.props.linkedin.toUpperCase();
-
-    // if (linkedin.length > 14) {
-    //   linkedin = linkedin.toString().substring(0, 12) + "...";
-    // }
     return (
       <div className="memberContainer">
-        <img src={require(`../images/team/${this.props.image}.jpeg`)}></img>
+        <img src={require(`../images/team/${this.props.image}.jpeg`)} onLoad={this.handlePeopleLoad}></img>
         <p>CLASS OF {this.props.year} </p>
         <h2> {this.props.name} </h2>
         <div className="info">

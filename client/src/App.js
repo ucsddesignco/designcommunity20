@@ -34,7 +34,8 @@ class App extends React.Component {
       allCommunity: allMembers,
       aboutButton: false,
       menuOpen: false,
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      readyState: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -45,6 +46,7 @@ class App extends React.Component {
     this.handleMenuOpen = this.handleMenuOpen.bind(this);
     this.leftSideMenu = this.leftSideMenu.bind(this);
     this.handleResize = this.handleResize.bind(this);
+    this.handleReadyStateChanged = this.handleReadyStateChanged.bind(this);
     this.shuffleArray = this.shuffleArray.bind(this);
   }
 
@@ -55,11 +57,22 @@ class App extends React.Component {
       `${aboutHeight}px`
     );
     window.addEventListener("resize", this.handleResize);
+    document.addEventListener("readystatechange", this.handleReadyStateChanged);
     ReactGA.initialize(trackingId);
   }
 
   componentWillMount() {
     this.shuffleArray(this.state.allCommunity);
+  }
+
+  handleReadyStateChanged() {
+    console.log("ready state change");
+    if (document.readyState === "complete") {
+      console.log("OCMPLE");
+      this.setState({
+        readyState: true
+      });
+    }
   }
 
   handleResize() {
@@ -361,21 +374,27 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <About parentCallback={this.aboutCallback} />
+        {/* {!this.state.readyState && <div>HELLo</div>} */}
 
-        <Row id="mainContainer">
-          <Col xs={20} sm={20} md={5}>
+        {this.state.readyState && (
+          <div>
             {" "}
-            {this.leftSideMenu()}
-          </Col>
+            <About parentCallback={this.aboutCallback} />
+            <Row id="mainContainer">
+              <Col xs={20} sm={20} md={5}>
+                {" "}
+                {this.leftSideMenu()}
+              </Col>
 
-          <Col xs={20} sm={20} md={15}>
-            <Row id="memberMap">{this.allMemberMap()}</Row>
-            <div id="noResults">
-              <h5>Sorry there's nothing here!</h5>
-            </div>
-          </Col>
-        </Row>
+              <Col xs={20} sm={20} md={15}>
+                <Row id="memberMap">{this.allMemberMap()}</Row>
+                <div id="noResults">
+                  <h5>Sorry there's nothing here!</h5>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        )}
       </div>
     );
   }

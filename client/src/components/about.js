@@ -23,7 +23,8 @@ class About extends React.Component {
 
     // Slide panel in/out
     if (aboutPage.style.transform == "translateX(0%)") {
-      aboutPage.style.transform = darkPanel.style.transform = "translateX(100%)";
+      aboutPage.style.transform = darkPanel.style.transform =
+        "translateX(100%)";
     } else {
       aboutPage.style.transform = darkPanel.style.transform = "translateX(0%)";
     }
@@ -49,7 +50,7 @@ class About extends React.Component {
         this.setState(state => ({
           hideAbout: true
         }));
-        
+
         this.handleAbout();
         document.body.style.overflow = "scroll";
       }
@@ -60,7 +61,10 @@ class About extends React.Component {
     new WOW.WOW().init();
     document.addEventListener("keydown", this.escFunction, false);
 
-    if (window.getComputedStyle(document.getElementById("menuContents")).display != "none") {
+    if (
+      window.getComputedStyle(document.getElementById("menuContents"))
+        .display != "none"
+    ) {
       document.getElementsByClassName("mainSite")[0].style.display = "flex";
     } else {
       document.getElementsByClassName("mainSite")[0].style.display = "none";
@@ -80,13 +84,13 @@ class About extends React.Component {
           <a href="http://www.ucsddesign.co/">
             <span>
               <h3>Main Site</h3>
-              <img src={require('../images/Union.svg')} />
+              <img src={require("../images/Union.svg")} />
             </span>
           </a>
         </Row>
 
         {/* Background brightness */}
-        <div id="panel-darken" onClick={ this.toggle }></div>
+        <div id="panel-darken" onClick={this.toggle}></div>
 
         {/* About panel */}
         <div className="aboutPage">
@@ -99,30 +103,30 @@ class About extends React.Component {
             />
           </div>
           <div>
-            <img 
+            <img
               id="aboutImg"
-              src={require("../images/aboutImg.jpg")} 
-              alt="Community" 
+              src={require("../images/aboutImg.jpg")}
+              alt="Community"
+              loading="lazy"
             />
           </div>
           <div id="about-body-text">
-            <h5>
-              Connecting you with your community!
-            </h5>
+            <h5>Connecting you with your community!</h5>
             <h5>
               Inspired by{" "}
               <a href="https://blackswho.design/">Blacks Who Design</a> and{" "}
-              <a href="https://womenwho.design/">Women Who Design</a>,{" "} our page
+              <a href="https://womenwho.design/">Women Who Design</a>, our page
               is an online directory aimed to connect UCSD student designers and
               alumni with each other. Our goal is to cultivate a vibrant
               community where people can share their work, build new
               relationships, look for mentors, and much more.
             </h5>
             <h5>
-              This community page isn’t just for Design Co members, but for all 
-              student designers at UCSD, from first-years to alumni. So, if 
-              you’re a fellow designer looking to meet people who share your 
-              interests, come join our community and be apart of something bigger!
+              This community page isn’t just for Design Co members, but for all
+              student designers at UCSD, from first-years to alumni. So, if
+              you’re a fellow designer looking to meet people who share your
+              interests, come join our community and be apart of something
+              bigger!
             </h5>
           </div>
         </div>

@@ -32,14 +32,24 @@ class Member extends React.Component {
           <img src={require("../images/globeVector.svg")}></img>
           <p>
             {" "}
-            <a href={portfolioURL}>{portfolio}</a>
+            <a href={portfolioURL} target="_blank">
+              {portfolio}
+            </a>
+            <span style={{ display: "none" }}>
+              Portfolio will open in a new tab
+            </span>
           </p>
         </div>
         <div className="info">
           <img src={require("../images/in.svg")}></img>
           <p>
             {" "}
-            <a href={linkedinURL}>{linkedin}</a>
+            <a href={linkedinURL} target="_blank">
+              {linkedin}
+            </a>
+            <span style={{ display: "none" }}>
+              LinkedIn profile will open in a new tab
+            </span>
           </p>
         </div>
       </div>

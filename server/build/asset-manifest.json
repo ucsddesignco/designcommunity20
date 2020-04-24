@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.9f56aef2.chunk.css",
-    "main.js": "/static/js/main.31baa8b9.chunk.js",
-    "main.js.map": "/static/js/main.31baa8b9.chunk.js.map",
+    "main.js": "/static/js/main.83893044.chunk.js",
+    "main.js.map": "/static/js/main.83893044.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fe015084.js",
     "runtime-main.js.map": "/static/js/runtime-main.fe015084.js.map",
-    "static/js/2.7260dd3f.chunk.js": "/static/js/2.7260dd3f.chunk.js",
-    "static/js/2.7260dd3f.chunk.js.map": "/static/js/2.7260dd3f.chunk.js.map",
+    "static/js/2.0a0d37cc.chunk.js": "/static/js/2.0a0d37cc.chunk.js",
+    "static/js/2.0a0d37cc.chunk.js.map": "/static/js/2.0a0d37cc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c17826dedfa6b47985bd407816dda241.js": "/precache-manifest.c17826dedfa6b47985bd407816dda241.js",
+    "precache-manifest.24bdfb2f53340ce25746af18bf52282e.js": "/precache-manifest.24bdfb2f53340ce25746af18bf52282e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.9f56aef2.chunk.css.map": "/static/css/main.9f56aef2.chunk.css.map",
-    "static/js/2.7260dd3f.chunk.js.LICENSE.txt": "/static/js/2.7260dd3f.chunk.js.LICENSE.txt",
+    "static/js/2.0a0d37cc.chunk.js.LICENSE.txt": "/static/js/2.0a0d37cc.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/NeuePlak-ExtendedBold.4b36649a.woff2",
     "static/media/Union.svg": "/static/media/Union.c01f89da.svg",
     "static/media/aboutImg.jpg": "/static/media/aboutImg.87b729bf.jpg",
@@ -44,6 +44,7 @@
     "static/media/nhu.jpeg": "/static/media/nhu.31fe30fe.jpeg",
     "static/media/paridhi.jpeg": "/static/media/paridhi.437d3dc5.jpeg",
     "static/media/quinn.jpeg": "/static/media/quinn.73cd1aaf.jpeg",
+    "static/media/quylanmac.jpeg": "/static/media/quylanmac.350bb2e2.jpeg",
     "static/media/samanthacheung.jpeg": "/static/media/samanthacheung.2ab9f94c.jpeg",
     "static/media/stella.jpeg": "/static/media/stella.000e5342.jpeg",
     "static/media/syedadam.jpeg": "/static/media/syedadam.b9602157.jpeg",
@@ -52,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fe015084.js",
-    "static/js/2.7260dd3f.chunk.js",
+    "static/js/2.0a0d37cc.chunk.js",
     "static/css/main.9f56aef2.chunk.css",
-    "static/js/main.31baa8b9.chunk.js"
+    "static/js/main.83893044.chunk.js"
   ]
 }

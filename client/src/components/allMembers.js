@@ -132,7 +132,7 @@ const allMembers = [
   {
     image: "syedadam",
     name: "Adam Syed",
-    year: "2022",
+    year: "2021",
     portfolio: "syedadam007.github.io/",
     linkedin: "/in/syedadamemirputra/",
     tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "EXResearcher"]
@@ -337,6 +337,16 @@ const allMembers = [
       "UXDesigner",
       "ProductDesigner",
       "UXResearcher"
+    ]
+  },
+  {
+    image: "quylanmac",
+    name: "Quylan Mac",
+    year: "2021",
+    portfolio: "quylanmac.com/",
+    linkedin: "/in/quylanmac/",
+    tags: [
+      "UXEngineer"
     ]
   }
 ];

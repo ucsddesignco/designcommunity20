@@ -135,7 +135,7 @@ const allMembers = [
     year: "2021",
     portfolio: "syedadam007.github.io/",
     linkedin: "/in/syedadamemirputra/",
-    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "EXResearcher"]
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "UXResearcher"]
   },
   {
     image: "stella",

@@ -348,6 +348,19 @@ const allMembers = [
     tags: [
       "UXEngineer"
     ]
+  },
+  {
+    image: "mading",
+    name: "Madi Ng",
+    year: "2020",
+    portfolio: "madi-ng.com/",
+    linkedin: "/in/m-ng/",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner",
+      "UXResearcher"
+      // Product Management
+    ]
   }
 ];
 

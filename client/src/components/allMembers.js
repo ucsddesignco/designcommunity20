@@ -366,6 +366,19 @@ const allMembers = [
       "UXResearcher"
       // Product Management
     ]
+  },
+  {
+    image: "braeanneori",
+    name: "Braeanne Oribello",
+    year: "2022",
+    portfolio: "braeanneori.com/",
+    linkedin: "/in/braeanneori",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner"
+    ]
   }
 ];
 

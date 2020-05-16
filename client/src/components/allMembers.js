@@ -379,6 +379,19 @@ const allMembers = [
       "ProductDesigner",
       "GraphicDesigner"
     ]
+  },
+  {
+    image: "eunsoolee",
+    name: "Eunsoo Lee",
+    year: "2020",
+    portfolio: "eunsoolee.co/",
+    linkedin: "/in/leeunsu",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner"
+    ]
   }
 ];
 

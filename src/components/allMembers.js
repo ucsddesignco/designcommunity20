@@ -348,6 +348,45 @@ const allMembers = [
     tags: [
       "UXEngineer"
     ]
+  },
+  {
+    image: "mading",
+    name: "Madi Ng",
+    year: "2020",
+    portfolio: "madi-ng.com/",
+    linkedin: "/in/m-ng/",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner",
+      "UXResearcher"
+      // Product Management
+    ]
+  },
+  {
+    image: "braeanneori",
+    name: "Braeanne Oribello",
+    year: "2022",
+    portfolio: "braeanneori.com/",
+    linkedin: "/in/braeanneori",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner"
+    ]
+  },
+  {
+    image: "eunsoolee",
+    name: "Eunsoo Lee",
+    year: "2020",
+    portfolio: "eunsoolee.co/",
+    linkedin: "/in/leeunsu",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner"
+    ]
   }
 ];
 

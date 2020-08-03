@@ -87,7 +87,11 @@ const allMembers = [
     year: "2020",
     portfolio: "lucylouxu.com/",
     linkedin: "/in/lucylouxu/",
-    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "GraphicDesigner"]
+    tags: [
+      "UXDesigner", 
+      "VisualDesigner", 
+      "ProductDesigner", 
+      "GraphicDesigner"]
   },
   {
     image: "quinn",
@@ -390,6 +394,17 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "GraphicDesigner"
+    ]
+  },
+  {
+    image: "willstock",
+    name: "Will Stock",
+    year: "2020",
+    portfolio: "wstock.myportfolio.com/",
+    linkedin: "/in/stillwock",
+    tags: [
+      "ProductDesigner"
+      // Industrial Designer
     ]
   }
 ];

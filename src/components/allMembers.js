@@ -406,6 +406,18 @@ const allMembers = [
       "ProductDesigner"
       // Industrial Designer
     ]
+  },
+  {
+    image: "abbysigler",
+    name: "Abby Sigler",
+    year: "2020",
+    portfolio: "abbysigler.com/",
+    linkedin: "/in/abigail-sigler/",
+    tags: [
+      "UXDesigner",
+      "ProductDesigner"
+      // Product Management
+    ]
   }
 ];
 

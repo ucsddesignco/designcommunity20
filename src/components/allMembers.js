@@ -137,7 +137,7 @@ const allMembers = [
     image: "syedadam",
     name: "Adam Syed",
     year: "2022",
-    portfolio: "syedadam.com/",
+    portfolio: "syedadam.com",
     linkedin: "/in/syedadamemirputra/",
     tags: [
       "UXDesigner", 

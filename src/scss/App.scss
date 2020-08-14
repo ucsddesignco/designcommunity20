@@ -120,12 +120,13 @@ html {
       }
     }
 
-    @media screen and (max-width: $md){
+    @media screen and (max-width: $md) {
       img {
         height: 3.4rem;
       }
 
-      h3, a span h3 {
+      h3,
+      a span h3 {
         font-size: 2.6rem;
       }
     }
@@ -448,4 +449,17 @@ option {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.8);
   transform: translateX(100%);
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  > img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  > img:hover {
+    filter: none;
+  }
 }

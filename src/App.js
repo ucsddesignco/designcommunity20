@@ -66,9 +66,7 @@ class App extends React.Component {
   }
 
   handleReadyStateChanged() {
-    console.log("ready state change");
     if (document.readyState === "complete") {
-      console.log("OCMPLE");
       this.setState({
         readyState: true
       });
@@ -336,7 +334,7 @@ class App extends React.Component {
             member.tags.includes("GraphicDesigner"))
         ) {
           return (
-            <Col xs={10} sm={10} md={5} lg={4}>
+            <Col xs={10} sm={10} md={5} lg={4} key={member.name}>
               <Member
                 image={member.image}
                 name={member.name}
@@ -349,7 +347,7 @@ class App extends React.Component {
         }
       } else {
         return (
-          <Col xs={10} sm={5} md={5} lg={4}>
+          <Col xs={10} sm={5} md={5} lg={4} key={member.name}>
             <Member
               image={member.image}
               name={member.name}

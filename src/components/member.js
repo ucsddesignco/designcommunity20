@@ -1,19 +1,9 @@
 import React from "react";
 import "../scss/App.scss";
-import { prototype } from "events";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 class Member extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      countPeople: 0
-    };
-
-    this.handlePeopleLoad = this.handlePeopleLoad.bind(this);
-  }
-
-  handlePeopleLoad() {}
-
   render() {
     const linkedinURL = `https://www.linkedin.com${this.props.linkedin}`;
     const portfolioURL = `http://${this.props.portfolio}`;
@@ -22,10 +12,15 @@ class Member extends React.Component {
     let linkedin = this.props.linkedin.toUpperCase();
     return (
       <div className="memberContainer">
-        <img
+        <LazyLoadImage
+          alt={this.props.name}
+          src={require(`../images/team/${this.props.image}.jpeg`)}
+          effect="blur"
+        />
+        {/* <img
           src={require(`../images/team/${this.props.image}.jpeg`)}
           loading="lazy"
-        ></img>
+        ></img> */}
         <p>CLASS OF {this.props.year} </p>
         <h2> {this.props.name} </h2>
         <div className="info">

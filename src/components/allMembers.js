@@ -18,7 +18,12 @@ const allMembers = [
     year: "2021",
     portfolio: "julianguyen.co",
     linkedin: "/in/nguyenjuliaa",
-    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "GraphicDesigner"]
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner",
+    ],
   },
   {
     image: "nhu",
@@ -31,8 +36,8 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "UXResearcher",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "emily",
@@ -44,8 +49,8 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "UXEngineer",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "grace",
@@ -57,8 +62,8 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "UXDesigner",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "natasha",
@@ -70,8 +75,8 @@ const allMembers = [
       "UXDesinger",
       "VisualDesigner",
       "ProductDesigner",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "brittany",
@@ -79,7 +84,7 @@ const allMembers = [
     year: "2020",
     portfolio: "brittanynewton.com",
     linkedin: "/in/brittanynewton88",
-    tags: ["VisualDesigner", "ProductDesigner"]
+    tags: ["VisualDesigner", "ProductDesigner"],
   },
   {
     image: "lucy",
@@ -88,10 +93,11 @@ const allMembers = [
     portfolio: "lucylouxu.com/",
     linkedin: "/in/lucylouxu/",
     tags: [
-      "UXDesigner", 
-      "VisualDesigner", 
-      "ProductDesigner", 
-      "GraphicDesigner"]
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner",
+    ],
   },
   {
     image: "quinn",
@@ -99,7 +105,7 @@ const allMembers = [
     year: "2021",
     portfolio: "quinn-vu.com",
     linkedin: "/in/thyvu1014/",
-    tags: ["VisualDesigner", "GraphicDesigner"]
+    tags: ["VisualDesigner", "GraphicDesigner"],
   },
   {
     image: "dana",
@@ -107,7 +113,7 @@ const allMembers = [
     year: "2021",
     portfolio: "danachou.net/flynyon",
     linkedin: "/in/dana-chou/",
-    tags: ["ProductDesigner"]
+    tags: ["ProductDesigner"],
   },
   {
     image: "vicky",
@@ -115,7 +121,7 @@ const allMembers = [
     year: "2020",
     portfolio: "vickyly.co/",
     linkedin: "/in/vicky-ly/",
-    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner"]
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner"],
   },
   {
     image: "andrew",
@@ -123,7 +129,7 @@ const allMembers = [
     year: "2020",
     portfolio: "ajzhen.com/",
     linkedin: "/in/andrew-zhen/",
-    tags: ["UXEngineer"]
+    tags: ["UXEngineer"],
   },
   {
     image: "daniel",
@@ -131,7 +137,7 @@ const allMembers = [
     year: "2021",
     portfolio: "lidaniel.com",
     linkedin: "/in/lidaniel99/",
-    tags: ["ContentStrategist"]
+    tags: ["ContentStrategist"],
   },
   {
     image: "syedadam",
@@ -139,11 +145,7 @@ const allMembers = [
     year: "2022",
     portfolio: "syedadam.com",
     linkedin: "/in/syedadamemirputra/",
-    tags: [
-      "UXDesigner", 
-      "VisualDesigner", 
-      "ProductDesigner", 
-      "UXResearcher"]
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "UXResearcher"],
   },
   {
     image: "stella",
@@ -156,8 +158,8 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "UXResearcher",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "paridhi",
@@ -165,7 +167,7 @@ const allMembers = [
     year: "2021",
     portfolio: "paridhikhaitan.me",
     linkedin: "/in/paridhikhaitan/",
-    tags: ["UXEngineer"]
+    tags: ["UXEngineer"],
   },
   {
     image: "amyan",
@@ -178,8 +180,8 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "UXResearcher",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "edngai",
@@ -187,11 +189,7 @@ const allMembers = [
     year: "2017",
     portfolio: "edngai.com",
     linkedin: "/in/engai/",
-    tags: [
-      "UXDesigner",
-      "ProductDesigner",
-      "UXEngineer"
-    ]
+    tags: ["UXDesigner", "ProductDesigner", "UXEngineer"],
   },
   {
     image: "neveforesti",
@@ -199,10 +197,7 @@ const allMembers = [
     year: "2021",
     portfolio: "neveforesti.com",
     linkedin: "/in/neveforesti/",
-    tags: [
-      "UXDesigner",
-      "UXEngineer"
-    ]
+    tags: ["UXDesigner", "UXEngineer"],
   },
   {
     image: "carlolopez",
@@ -215,8 +210,8 @@ const allMembers = [
       "VisualDesigner",
       "ProductDesigner",
       "UXResearcher",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "jonathanfunes",
@@ -226,9 +221,9 @@ const allMembers = [
     linkedin: "/in/jonathan-funes/",
     tags: [
       "VisualDesigner",
-      "GraphicDesigner"
+      "GraphicDesigner",
       // "Illustration"
-    ]
+    ],
   },
   {
     image: "katherinechen",
@@ -240,8 +235,8 @@ const allMembers = [
       "UXDesigner",
       "VisualDesigner",
       "ProductDesigner",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "samanthacheung",
@@ -249,11 +244,7 @@ const allMembers = [
     year: "2022",
     portfolio: "samanthacheung.design/",
     linkedin: "/in/cheung-samantha/",
-    tags: [
-      "UXDesigner",
-      "VisualDesigner",
-      "GraphicDesigner"
-    ]
+    tags: ["UXDesigner", "VisualDesigner", "GraphicDesigner"],
   },
   {
     image: "mengmingluo",
@@ -261,11 +252,7 @@ const allMembers = [
     year: "2023",
     portfolio: "mengmingluo.com",
     linkedin: "/in/mengming-luo",
-    tags: [
-      "UXDesigner",
-      "ProductDesigner",
-      "UXEngineer"
-    ]
+    tags: ["UXDesigner", "ProductDesigner", "UXEngineer"],
   },
   {
     image: "joelsequeira",
@@ -273,9 +260,7 @@ const allMembers = [
     year: "2018",
     portfolio: "github.com/joelseq",
     linkedin: "/in/joelseq/",
-    tags: [
-      "UXEngineer"
-    ]
+    tags: ["UXEngineer"],
   },
   {
     image: "michellewan",
@@ -283,12 +268,7 @@ const allMembers = [
     year: "2020",
     portfolio: "misawan.github.io",
     linkedin: "/in/misawan/",
-    tags: [
-      "UXDesigner",
-      "VisualDesigner",
-      "ProductDesigner",
-      "UXResearcher"
-    ]
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner", "UXResearcher"],
   },
   {
     image: "aidenjauffret",
@@ -296,11 +276,7 @@ const allMembers = [
     year: "2022",
     portfolio: "aidenjauffret.myportfolio.com/",
     linkedin: "/in/jfret/",
-    tags: [
-      "UXDesigner",
-      "ProductDesigner",
-      "GraphicDesigner"
-    ]
+    tags: ["UXDesigner", "ProductDesigner", "GraphicDesigner"],
   },
   {
     image: "jaredsuasin",
@@ -308,11 +284,7 @@ const allMembers = [
     year: "2019",
     portfolio: "jaredsuasin.com/",
     linkedin: "/in/jaredsuasin/",
-    tags: [
-      "UXDesigner",
-      "ProductDesigner",
-      "UXEngineer"
-    ]
+    tags: ["UXDesigner", "ProductDesigner", "UXEngineer"],
   },
   {
     image: "alicelee",
@@ -320,9 +292,7 @@ const allMembers = [
     year: "2021",
     portfolio: "alicelee.design/",
     linkedin: "/in/alicelee1998/",
-    tags: [
-      "UXResearcher"
-    ]
+    tags: ["UXResearcher"],
   },
   {
     image: "nathanmansur",
@@ -330,10 +300,7 @@ const allMembers = [
     year: "2019",
     portfolio: "nathanmansur.com/",
     linkedin: "/in/nathan-mansur/",
-    tags: [
-      "UXDesigner",
-      "ProductDesigner"
-    ]
+    tags: ["UXDesigner", "ProductDesigner"],
   },
   {
     image: "thalalcassim",
@@ -341,11 +308,7 @@ const allMembers = [
     year: "2020",
     portfolio: "thalalcassim.com/",
     linkedin: "/in/thalalcassim/",
-    tags: [
-      "UXDesigner",
-      "ProductDesigner",
-      "UXResearcher"
-    ]
+    tags: ["UXDesigner", "ProductDesigner", "UXResearcher"],
   },
   {
     image: "quylanmac",
@@ -353,9 +316,7 @@ const allMembers = [
     year: "2021",
     portfolio: "quylanmac.com/",
     linkedin: "/in/quylanmac/",
-    tags: [
-      "UXEngineer"
-    ]
+    tags: ["UXEngineer"],
   },
   {
     image: "mading",
@@ -366,9 +327,9 @@ const allMembers = [
     tags: [
       "UXDesigner",
       "ProductDesigner",
-      "UXResearcher"
+      "UXResearcher",
       // Product Management
-    ]
+    ],
   },
   {
     image: "braeanneori",
@@ -380,8 +341,8 @@ const allMembers = [
       "UXDesigner",
       "VisualDesigner",
       "ProductDesigner",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "eunsoolee",
@@ -393,8 +354,8 @@ const allMembers = [
       "UXDesigner",
       "VisualDesigner",
       "ProductDesigner",
-      "GraphicDesigner"
-    ]
+      "GraphicDesigner",
+    ],
   },
   {
     image: "willstock",
@@ -403,9 +364,9 @@ const allMembers = [
     portfolio: "wstock.myportfolio.com/",
     linkedin: "/in/stillwock",
     tags: [
-      "ProductDesigner"
+      "ProductDesigner",
       // Industrial Designer
-    ]
+    ],
   },
   {
     image: "abbysigler",
@@ -415,10 +376,26 @@ const allMembers = [
     linkedin: "/in/abigail-sigler/",
     tags: [
       "UXDesigner",
-      "ProductDesigner"
+      "ProductDesigner",
       // Product Management
-    ]
-  }
+    ],
+  },
+  {
+    image: "amberlu",
+    name: "Amber Lu",
+    year: "2021",
+    portfolio: "https://amberlu.me",
+    linkedin: "/in/amberlu1226/",
+    tags: ["UXDesigner", "ProductDesigner"],
+  },
+  {
+    image: "tiffanylau",
+    name: "Tiffany Lau",
+    year: "2020",
+    portfolio: "https://tiffanylau.co",
+    linkedin: "/in/tiffanywlau98/",
+    tags: ["UXResearcher"],
+  },
 ];
 
 export default allMembers;

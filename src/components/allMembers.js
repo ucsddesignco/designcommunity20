@@ -396,6 +396,30 @@ const allMembers = [
     linkedin: "/in/tiffanywlau98/",
     tags: ["UXResearcher"],
   },
+  {
+    image: "coraxing",
+    name: "Cora Xing",
+    year: "2021",
+    portfolio: "coraxyc.github.io/portfolio",
+    linkedin: "/in/coraxyc/",
+    tags: ["UXDesigner", "VisualDesigner", "UXEngineer", "GraphicDesigner"],
+  },
+  {
+    image: "giscagiancana",
+    name: "Gisca Giancana",
+    year: "2022",
+    portfolio: "giscagiancana.com/",
+    linkedin: "/in/giscagiancana/",
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner"],
+  },
+  {
+    image: "leslienguyen",
+    name: "Leslie Nguyen",
+    year: "2021",
+    portfolio: "leslienguyn.github.io",
+    linkedin: "/in/leslienguyen98/",
+    tags: ["UXDesigner", "UXEngineer"],
+  },
 ];
 
 export default allMembers;

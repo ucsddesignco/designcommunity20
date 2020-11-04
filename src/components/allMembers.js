@@ -420,6 +420,19 @@ const allMembers = [
     linkedin: "/in/leslienguyen98/",
     tags: ["UXDesigner", "UXEngineer"],
   },
+  {
+    image: "mylinhlac",
+    name: "Mylinh Lac",
+    year: "2022",
+    portfolio: "mylinhlac.com/",
+    linkedin: "/in/mylinh-lac/",
+    tags: [
+      "UXDesigner",
+      "VisualDesigner",
+      "ProductDesigner",
+      "GraphicDesigner",
+    ],
+  },
 ];
 
 export default allMembers;

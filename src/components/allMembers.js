@@ -29,7 +29,7 @@ const allMembers = [
     image: "nhu",
     name: "Nhu Luong",
     year: "2021",
-    portfolio: "nhu777.net/",
+    portfolio: "nhu777.webflow.io",
     linkedin: "/in/nhu-luong777/",
     tags: [
       "UXDesigner",

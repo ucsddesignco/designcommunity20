@@ -433,6 +433,14 @@ const allMembers = [
       "GraphicDesigner",
     ],
   },
+  {
+    image: "ishaanbose",
+    name: "Ishaan Bose",
+    year: "2023",
+    portfolio: "ishaanbose.com/",
+    linkedin: "/in/ishaanbose/",
+    tags: ["UXDesigner", "ProductDesigner"],
+  },
 ];
 
 export default allMembers;

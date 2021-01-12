@@ -441,6 +441,30 @@ const allMembers = [
     linkedin: "/in/ishaanbose/",
     tags: ["UXDesigner", "ProductDesigner"],
   },
+  {
+    image: "ishaanbose",
+    name: "Ishaan Bose",
+    year: "2023",
+    portfolio: "ishaanbose.com/",
+    linkedin: "/in/ishaanbose/",
+    tags: ["UXDesigner", "ProductDesigner"],
+  },
+  {
+    image: "lilliannguyen",
+    name: "Lillian Nguyen",
+    year: "2020",
+    portfolio: "lillianqn.com/",
+    linkedin: "/in/lillianqn/",
+    tags: ["UXDesigner", "VisualDesigner", "ProductDesigner"],
+  },
+  {
+    image: "emilytam",
+    name: "Emily Tam",
+    year: "2021",
+    portfolio: "tamemily.com",
+    linkedin: "/in/emily-tam/",
+    tags: ["UXDesigner", "ProductDesigner", "UXResearcher"],
+  },
 ];
 
 export default allMembers;

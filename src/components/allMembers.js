@@ -111,7 +111,7 @@ const allMembers = [
     image: "dana",
     name: "Dana Chou",
     year: "2021",
-    portfolio: "danachou.net/flynyon",
+    portfolio: "danachou.net/",
     linkedin: "/in/dana-chou/",
     tags: ["ProductDesigner"],
   },

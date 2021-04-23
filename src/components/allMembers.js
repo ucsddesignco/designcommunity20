@@ -457,6 +457,14 @@ const allMembers = [
     linkedin: "/in/emily-tam/",
     tags: ["UXDesigner", "ProductDesigner", "UXResearcher"],
   },
+  {
+    image: "stevenchen",
+    name: "Steven Chen",
+    year: "2020",
+    portfolio: "stevenychen.com",
+    linkedin: "/in/stevchen",
+    tags: ["ProductDesigner"],
+  },
 ];
 
 export default allMembers;

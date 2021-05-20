@@ -473,6 +473,14 @@ const allMembers = [
     linkedin: "/in/rlc009",
     tags: ["VisualDesigner", "GraphicDesigner"],
   },
+  {
+    image: "shawnkim",
+    name: "Shawn Kim",
+    year: "2023",
+    portfolio: "portfolio-shawnkim.netlify.app",
+    linkedin: "/in/shawn-j-kim",
+    tags: ["VisualDesigner", "GraphicDesigner"],
+  },
 ];
 
 export default allMembers;

@@ -465,6 +465,14 @@ const allMembers = [
     linkedin: "/in/stevchen",
     tags: ["ProductDesigner"],
   },
+  {
+    image: "rebeccachan",
+    name: "Rebecca Chan",
+    year: "2021",
+    portfolio: "rebecca-chan.com",
+    linkedin: "/in/rlc009",
+    tags: ["VisualDesigner", "GraphicDesigner"],
+  },
 ];
 
 export default allMembers;

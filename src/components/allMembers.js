@@ -481,6 +481,14 @@ const allMembers = [
     linkedin: "/in/shawn-j-kim",
     tags: ["VisualDesigner", "GraphicDesigner"],
   },
+  {
+    image: "sherryma",
+    name: "Sherry Ma",
+    year: "2021",
+    portfolio: "sherrymayc.com",
+    linkedin: "/in/sherry-yancheng-ma/",
+    tags: ["UXDesigner", "ProductDesigner", "UXResearcher"],
+  },
 ];
 
 export default allMembers;

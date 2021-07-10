@@ -6,6 +6,15 @@ html {
   background-color: $black;
 }
 
+.first-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-row h3, a {
+  margin-bottom: 1.25rem;
+}
+
 /*
 * STYLED CHECKBOXES COMPONENT
 */
@@ -94,7 +103,6 @@ html {
 
     a {
       text-decoration: none;
-      margin-left: $spacer2;
 
       span {
         display: flex;

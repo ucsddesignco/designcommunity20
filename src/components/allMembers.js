@@ -242,7 +242,7 @@ const allMembers = [
     image: "samanthacheung",
     name: "Samantha Cheung",
     year: "2022",
-    portfolio: "samanthacheung.design/",
+    portfolio: "https://samanthacheung.net/",
     linkedin: "/in/cheung-samantha/",
     tags: ["UXDesigner", "VisualDesigner", "GraphicDesigner"],
   },

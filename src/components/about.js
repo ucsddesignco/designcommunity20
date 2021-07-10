@@ -79,15 +79,24 @@ class About extends React.Component {
     return (
       <div>
         {/* Footer */}
-        <Row className="mainSite" style={{ alignItems: "baseline" }}>
+        <Row className="mainSite">
+        <div className="first-row">
           <h3 onClick={this.toggle}>About</h3>
+          <a href="https://ucsddesign.co/contact">
+            <span>
+              <h3>Contact Us</h3>
+              <img src={require("../images/Union.svg")} />
+            </span>
+          </a>
           <a href="http://www.ucsddesign.co/">
             <span>
               <h3>Main Site</h3>
               <img src={require("../images/Union.svg")} />
             </span>
           </a>
+        </div>
         </Row>
+
 
         {/* Background brightness */}
         <div id="panel-darken" onClick={this.toggle}></div>

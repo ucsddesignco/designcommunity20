@@ -11,8 +11,18 @@ html {
   flex-direction: column;
 }
 
-.first-row h3, a {
+.first-row h3,
+a {
   margin-bottom: 1.25rem;
+}
+$sm: 576px;
+$md: 767px;
+$md-end: 768px;
+
+@media screen and (max-height: 640px) {
+  .first-row {
+    display: none;
+  }
 }
 
 /*

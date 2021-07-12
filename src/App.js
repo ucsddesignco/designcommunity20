@@ -11,7 +11,7 @@ import {
   Col,
   Visible,
   Hidden,
-  setConfiguration
+  setConfiguration,
 } from "react-grid-system";
 import About from "./components/about";
 
@@ -35,7 +35,7 @@ class App extends React.Component {
       aboutButton: false,
       menuOpen: false,
       windowWidth: window.innerWidth,
-      readyState: false
+      readyState: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -68,14 +68,14 @@ class App extends React.Component {
   handleReadyStateChanged() {
     if (document.readyState === "complete") {
       this.setState({
-        readyState: true
+        readyState: true,
       });
     }
   }
 
   handleResize() {
     this.setState({
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
     });
 
     if (this.state.windowWidth > 767) {
@@ -84,7 +84,7 @@ class App extends React.Component {
       document.getElementById("menuContents").style.position = "static";
       document.getElementById("memberMap").style.position = "static";
       this.setState({
-        menuOpen: false
+        menuOpen: false,
       });
     } else if (this.state.menuOpen === false) {
       document.getElementsByClassName("mainSite")[0].style.display = "none";
@@ -109,7 +109,7 @@ class App extends React.Component {
     }
 
     this.setState({
-      [name]: value
+      [name]: value,
     });
 
     this.shuffleArray(this.state.allCommunity);
@@ -138,7 +138,7 @@ class App extends React.Component {
   aboutState() {
     let val = !this.state.aboutButton;
     this.setState({
-      aboutButton: val
+      aboutButton: val,
     });
   }
 
@@ -288,13 +288,13 @@ class App extends React.Component {
       UXResearcher: false,
       UXEngineer: false,
       GraphicDesigner: false,
-      numFilters: 0
+      numFilters: 0,
     });
   }
 
   aboutCallback() {
     this.setState({
-      aboutButton: false
+      aboutButton: false,
     });
   }
 
@@ -313,12 +313,12 @@ class App extends React.Component {
 
     let val = !this.state.menuOpen;
     this.setState({
-      menuOpen: val
+      menuOpen: val,
     });
   }
 
   allMemberMap() {
-    return this.state.allCommunity.map(member => {
+    return this.state.allCommunity.map((member) => {
       if (this.state.numFilters > 0) {
         if (
           (this.state.UXDesigner && member.tags.includes("UXDesigner")) ||
